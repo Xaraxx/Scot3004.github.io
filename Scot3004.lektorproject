@@ -2,4 +2,4 @@
 name = Scot3004
 
 [servers.ghpages]
-target = ghpages+https://Scot3004/Scot3004.github.io
+target = ghpages+https://Scot3004/Scot3004.github.io?cname=www.scot3004.xyz
