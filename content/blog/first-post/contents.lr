@@ -1,9 +1,9 @@
-title: Hello Website
+title: Entrada de blog
 ---
 pub_date: 2016-03-17
 ---
 author: scot3004
 ---
-body:
-
-This is an example blog post.  Not much here but that's not the point :)
+body: Esta entrada es una prueba del administrador del blog
+---
+twitter_handle: scot3004
