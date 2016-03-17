@@ -1,5 +1,5 @@
-title: Bienvenido
+title: Sergio C. Orozco Torres
 ---
 body: Este sitio es una demostración de Lektor para un sitio web basico con algunas páginas y un blog
 ---
-_template: page.html
+_template: index.html

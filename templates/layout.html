@@ -28,7 +28,6 @@
 </head>
 <body>
   <header>
-    <h1>Scot3004</h1>
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
@@ -64,13 +63,39 @@
       </ul>
     </nav>
   </header>
-  <div class="page">
     {% block body %}{% endblock %}
   </div>
-  <footer>
-    &copy; Copyright 2016 by scot3004
-  </footer>
 
+  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Scot3004</strong>
+                    </h4>
+                    <p>Calle 60 # 18 - 60<br>Barranquilla, CO 080012</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (301) 271-3673</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; 2016 by Scot3004</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- jQuery -->
     <script src="{{ '/js/jquery.js'| url}}"></script>
 
