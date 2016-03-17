@@ -1,7 +1,3 @@
 title: Bienvenido
 ---
-body:
-
-This is a basic demo website that shows how to use Lektor for a basic
-website with some pages and a blog.
-Este sitio es una demostración de Lektor para un sitio web basico con algunas páginas y un blog
+body: Este sitio es una demostración de Lektor para un sitio web basico con algunas páginas y un blog
