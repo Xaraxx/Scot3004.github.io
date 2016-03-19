@@ -162,15 +162,7 @@ hr.small {
     -o-background-size: cover;
 }
 
-/* About */
-
-.about {
-    padding: 50px 0;
-}
-
-/* Services */
-
-.services {
+.page {
     padding: 50px 0;
 }
 
@@ -239,5 +231,9 @@ footer {
 }
 
 .kalam{
+    font-family: 'Kalam', cursive;
+}
+
+.post-title{
     font-family: 'Kalam', cursive;
 }

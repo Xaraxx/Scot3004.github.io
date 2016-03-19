@@ -28,12 +28,9 @@
 
 </head>
 <body>
-  <header>
-        {% include 'sidebar.html' %}
-  </header>
+    {% include 'sidebar.html' %}
     {% block body %}{% endblock %}
-  </div>
-{% include 'footer.html' %}
+    {% include 'footer.html' %}
     <!-- jQuery -->
     <script src="{{ '/js/jquery.js'| url}}"></script>
     <!-- Bootstrap Core JavaScript -->
