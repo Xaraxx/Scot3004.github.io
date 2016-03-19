@@ -19,24 +19,24 @@ var gulp = require('gulp'),
 
 var paths = {
     /* Source paths */
-    styles: ['assets/sass/main.scss'],
+    styles: ['assets_src/sass/main.scss'],
     scripts: [
-        'assets/bower_components/jquery/dist/jquery.js',
-        'assets/bower_components/jquery.easing/js/jquery.easing.js',
-        'assets/bower_components/bootstrap/dist/js/bootstrap.js',
-        'assets/js/grayscale.js'
+        'assets_src/bower_components/jquery/dist/jquery.js',
+        'assets_src/bower_components/jquery.easing/js/jquery.easing.js',
+        'assets_src/bower_components/bootstrap/dist/js/bootstrap.js',
+        'assets_src/js/grayscale.js'
     ],
-    images: ['assets/images/**/*'],
+    images: ['assets_src/images/**/*'],
     fonts: [
-        'assets/bower_components/bootstrap/fonts/*',
-        'assets/bower_components/font-awesome/fonts/*'
+        'assets_src/bower_components/bootstrap/fonts/*',
+        'assets_src/bower_components/font-awesome/fonts/*'
     ],
 
     /* Output paths */
-    stylesOutput: 'styles',
-    scriptsOutput: 'js',
-    imagesOutput: 'images',
-    fontsOutput: 'fonts'
+    stylesOutput: 'assets/styles',
+    scriptsOutput: 'assets/js',
+    imagesOutput: 'assets/images',
+    fontsOutput: 'assets/fonts'
 };
 
 /* Tasks */
