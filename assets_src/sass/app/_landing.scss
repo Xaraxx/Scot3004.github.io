@@ -6,7 +6,7 @@
   padding: 100px 0;
   text-align: center;
   color: $grayscale-light;
-  background: $grayscale-dark url(../img/intro-bg.jpg) no-repeat scroll bottom center;
+  background: $grayscale-dark url(../img/intro-bg.jpg) no-repeat scroll top left;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -34,7 +34,7 @@
     .intro-body {
 
       .brand-heading {
-        font-size: 48px;
+        font-size: 32px;
       }
 
       .intro-text {
