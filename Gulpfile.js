@@ -27,7 +27,7 @@ var paths = {
         'assets_src/js/grayscale.js',
         'assets_src/js/main.js'
     ],
-    images: ['assets_src/images/**/*'],
+    images: ['assets_src/img/*'],
     fonts: [
         'assets_src/bower_components/bootstrap/fonts/*',
         'assets_src/bower_components/font-awesome/fonts/*'
@@ -36,7 +36,7 @@ var paths = {
     /* Output paths */
     stylesOutput: 'assets/styles',
     scriptsOutput: 'assets/js',
-    imagesOutput: 'assets/images',
+    imagesOutput: 'assets/img',
     fontsOutput: 'assets/fonts'
 };
 

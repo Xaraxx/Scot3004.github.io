@@ -11708,7 +11708,7 @@ a {
   padding: 100px 0;
   text-align: center;
   color: #fff;
-  background: #000 url(../images/intro-bg.jpg) no-repeat scroll bottom center;
+  background: #000 url(../img/intro-bg.jpg) no-repeat scroll bottom center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -11754,7 +11754,7 @@ a {
   width: 100%;
   padding: 50px 0;
   color: #fff;
-  background: #000 url(../images/downloads-bg.jpg) no-repeat scroll center center;
+  background: #000 url(../img/downloads-bg.jpg) no-repeat scroll center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
