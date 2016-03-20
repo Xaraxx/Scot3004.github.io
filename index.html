@@ -2,20 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Sergio C. Orozco Torres — Scot3004</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom CSS -->
-    <link href="./css/stylish-portfolio.css" rel="stylesheet">
+    <link href="./styles/main.min.css?h=dc1ad7ab" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -27,79 +22,82 @@
     <![endif]-->
 
 </head>
-<body>
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-<li class="sidebar-brand">
-                <a href="./" >Scot3004</a>
-            </li>
-            <li>
-                <a href="#top" onclick = "$('#menu-close').click();" >Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick = "$('#menu-close').click();" >About</a>
-            </li>
-            <li>
-                <a href="#services" onclick = "$('#menu-close').click();" >Services</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick = "$('#menu-close').click();" >Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick = "$('#menu-close').click();" >Contact</a>
-            </li>
-        <li class="active"><a href="./">Welcome</a></li>
-        
-          <li><a href="./blog/">Blog</a></li>
-        
-          <li><a href="./projects/">Projects</a></li>
-        
-          <li><a href="./about/">About</a></li>
-        
-      </ul>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Scot</span>3004
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Quien soy</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
     </nav>
-    
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1></h1>
-            <h2 class="kalam">Sergio C. Orozco Torres</h2>
-            <br>
-            <a href="#about" class="btn btn-dark btn-lg">Ver Mas</a>
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Sergio C. Orozco Torres</h1>
+                        <p class="intro-text"><p>Renovarse refleja la adaptación al cambio</p>
+</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- About -->
-    <section id="about" class="page">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2><p>Este sitio es una demostración de Lektor para un sitio web basico con algunas páginas y un blog</p>
-</h2>
-                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
-                </div>
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Sergio Carlos Orozco Torres</h2>
+                <p>Desarrollador web</p>
+                <p>Renovarse evidencia la adaptación al cambio</p>
             </div>
-            <!-- /.row -->
         </div>
-        <!-- /.container -->
     </section>
 
-      <footer>
-    <div class="container">
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 text-center">
+            <div class="col-lg-8 col-lg-offset-2">
                 <h4><strong>Scot3004</strong>
                 </h4>
                 <p>Calle 60 # 18 - 60<br>Barranquilla, CO 080012</p>
                 <ul class="list-unstyled">
                     <li><i class="fa fa-phone fa-fw"></i> (301) 271-3673</li>
-                    <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>
+                    <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:scot3004@hotmail.com">scot3004@hotmail.com</a>
                     </li>
                 </ul>
                 <br>
-                <ul class="list-inline">
+                <ul class="list-inline banner-social-buttons">
                     <li>
                         <a href="http://www.facebook.com/scot3004"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
                     </li>
@@ -110,21 +108,26 @@
                         <a href="http://www.github.com/Scot3004"><i class="fa fa-github fa-fw fa-3x"></i></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                        <a href="https://plus.google.com/u/0/+SergioOrozcoTorres"><i class="fa fa-google-plus fa-fw fa-3x"></i></a>
                     </li>
                 </ul>
-                <hr class="small">
-                <p class="text-muted">Copyright &copy; 2016 by Scot3004</p>
+            </div>
+        </div>
+    </section>
+
+
+
+  <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <p>Copyright &copy; 2016 by Scot3004</p>
             </div>
         </div>
     </div>
 </footer>
-    <!-- jQuery -->
-    <script src="./js/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="./js/bootstrap.min.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="./js/main.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="./js/main.min.js?h=0ac7d1b5"></script>
 
 </body>
 </html>
