@@ -24,7 +24,8 @@ var paths = {
         'assets_src/bower_components/jquery/dist/jquery.js',
         'assets_src/bower_components/jquery.easing/js/jquery.easing.js',
         'assets_src/bower_components/bootstrap/dist/js/bootstrap.js',
-        'assets_src/js/grayscale.js'
+        'assets_src/js/grayscale.js',
+        'assets_src/js/main.js'
     ],
     images: ['assets_src/images/**/*'],
     fonts: [

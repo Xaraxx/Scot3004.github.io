@@ -11808,7 +11808,7 @@ $(function() {
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
-
+/*
 // Google Maps Scripts
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
@@ -11940,6 +11940,7 @@ function init() {
         }]
     };
 
+
     // Get the HTML DOM element that will contain your map
     // We are using a div with id="map" seen below in the <body>
     var mapElement = document.getElementById('map');
@@ -11955,4 +11956,6 @@ function init() {
         map: map,
         icon: image
     });
+
 }
+*/
