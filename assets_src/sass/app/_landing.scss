@@ -1,0 +1,89 @@
+
+.intro {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: $grayscale-light;
+  background: $grayscale-dark url(../img/intro-bg.jpg) no-repeat scroll bottom center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+
+  .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+
+    .brand-heading {
+      font-size: 24px;
+    }
+
+    .intro-text {
+      font-size: 18px;
+    }
+  }
+}
+
+@media(min-width:$screen-xs-max) {
+  .intro {
+    height: 100%;
+    padding: 0;
+
+    .intro-body {
+
+      .brand-heading {
+        font-size: 48px;
+      }
+
+      .intro-text {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+
+ul.banner-social-buttons {
+  margin-top: 0;
+}
+
+@media(max-width:$screen-md-max) {
+
+  ul.banner-social-buttons {
+    margin-top: 15px;
+  }
+}
+
+@media(max-width:$screen-xs-max) {
+
+  ul.banner-social-buttons {
+
+    li {
+      display: block;
+      margin-bottom: 20px;
+      padding: 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+@media(min-width:$screen-xs-max) {
+
+  .content-section {
+    padding-top: 250px;
+  }
+
+  .download-section {
+    padding: 100px 0;
+  }
+
+  #map {
+    height: 400px;
+    margin-top: 250px;
+  }
+}

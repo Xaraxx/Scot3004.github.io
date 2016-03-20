@@ -13,7 +13,8 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
     cache = require('gulp-cache'),
-    del = require('del');
+    del = require('del'),
+    newer = require('gulp-newer');
 
 /* Set paths */
 
@@ -27,7 +28,7 @@ var paths = {
         'assets_src/js/grayscale.js',
         'assets_src/js/main.js'
     ],
-    images: ['assets_src/img/*'],
+    images: ['assets_src/img/**'],
     fonts: [
         'assets_src/bower_components/bootstrap/fonts/*',
         'assets_src/bower_components/font-awesome/fonts/*'
@@ -64,7 +65,8 @@ gulp.task('scripts', function() {
 
 gulp.task('images', function() {
     return gulp.src(paths.images)
-        .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
+        .pipe(newer(paths.imagesOutput))
+        .pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))
         .pipe(gulp.dest(paths.imagesOutput))
         .pipe(notify({ message: 'Images task complete' }));
 });
@@ -76,7 +78,7 @@ gulp.task('fonts', function() {
 });
 
 gulp.task('clean', function(cb) {
-    del([paths.stylesOutput, paths.scriptsOutput, paths.imagesOutput, paths.fontsOutput], cb)
+    del([paths.stylesOutput, paths.scriptsOutput, paths.fontsOutput], cb)
 });
 
 gulp.task('default', ['clean'], function() {
