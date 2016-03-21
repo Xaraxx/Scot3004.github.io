@@ -22,11 +22,13 @@ var paths = {
     /* Source paths */
     styles: ['assets_src/sass/main.scss'],
     scripts: [
-        'assets_src/bower_components/jquery/dist/jquery.js',
-        'assets_src/bower_components/jquery.easing/js/jquery.easing.js',
-        'assets_src/bower_components/bootstrap/dist/js/bootstrap.js',
         'assets_src/js/grayscale.js',
         'assets_src/js/main.js'
+    ],
+    vendor_scripts: [
+        'assets_src/bower_components/jquery/dist/jquery.js',
+        'assets_src/bower_components/jquery.easing/js/jquery.easing.js',
+        'assets_src/bower_components/bootstrap/dist/js/bootstrap.js'
     ],
     images: ['assets_src/img/**'],
     fonts: [
@@ -52,15 +54,21 @@ gulp.task('styles', function() {
 });
 
 gulp.task('scripts', function() {
-    return gulp.src(paths.scripts)
-        .pipe(jshint('.jshintrc'))
-        .pipe(jshint.reporter('default'))
+
+    return gulp.src(paths.vendor_scripts.concat(paths.scripts))
         .pipe(concat('main.js'))
         .pipe(gulp.dest(paths.scriptsOutput))
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
         .pipe(gulp.dest(paths.scriptsOutput))
-        .pipe(notify({ message: 'Scripts task complete' }));
+        .pipe(notify({ message: 'Scripts join, task complete' }));
+});
+
+gulp.task('scripts_hint', function() {
+    return gulp.src(paths.scripts)
+        .pipe(jshint('.jshintrc'))
+        .pipe(jshint.reporter('default'))
+        .pipe(notify({ message: 'Scripts validation, task complete' }));
 });
 
 gulp.task('images', function() {
@@ -82,5 +90,5 @@ gulp.task('clean', function(cb) {
 });
 
 gulp.task('default', ['clean'], function() {
-    gulp.start('styles', 'scripts', 'images', 'fonts');
+    gulp.start('styles','scripts_hint', 'scripts', 'images', 'fonts');
 });
