@@ -5,14 +5,13 @@
 /* Get dependencies */
 var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
-    minifycss = require('gulp-minify-css'),
+    cleanCSS = require('gulp-clean-css'),
     jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
-    cache = require('gulp-cache'),
     del = require('del'),
     newer = require('gulp-newer');
 
@@ -44,51 +43,50 @@ var paths = {
 };
 
 /* Tasks */
-gulp.task('styles', function() {
+gulp.task('css', function() {
     return sass(paths.styles,{ style: 'expanded' })
         .pipe(gulp.dest(paths.stylesOutput))
         .pipe(rename({suffix: '.min'}))
-        .pipe(minifycss())
-        .pipe(gulp.dest(paths.stylesOutput))
-        .pipe(notify({ message: 'Styles task complete' }));
+        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(gulp.dest(paths.stylesOutput));
 });
 
-gulp.task('scripts', function() {
+gulp.task('js', function() {
 
     return gulp.src(paths.vendor_scripts.concat(paths.scripts))
         .pipe(concat('main.js'))
         .pipe(gulp.dest(paths.scriptsOutput))
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
-        .pipe(gulp.dest(paths.scriptsOutput))
-        .pipe(notify({ message: 'Scripts join, task complete' }));
+        .pipe(gulp.dest(paths.scriptsOutput));
 });
 
-gulp.task('scripts_hint', function() {
+gulp.task('jshint', function() {
     return gulp.src(paths.scripts)
         .pipe(jshint('.jshintrc'))
-        .pipe(jshint.reporter('default'))
-        .pipe(notify({ message: 'Scripts validation, task complete' }));
+        .pipe(jshint.reporter('default'));
 });
 
-gulp.task('images', function() {
+gulp.task('img', function() {
     return gulp.src(paths.images)
         .pipe(newer(paths.imagesOutput))
         .pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))
-        .pipe(gulp.dest(paths.imagesOutput))
-        .pipe(notify({ message: 'Images task complete' }));
+        .pipe(gulp.dest(paths.imagesOutput));
 });
 
 gulp.task('fonts', function() {
     return gulp.src(paths.fonts)
-    .pipe(gulp.dest(paths.fontsOutput))
-    .pipe(notify({ message: 'Fonts task complete', onLast: true }));
+    .pipe(gulp.dest(paths.fontsOutput));
 });
 
-gulp.task('clean', function(cb) {
-    del([paths.stylesOutput, paths.scriptsOutput, paths.fontsOutput], cb)
+gulp.task('clean', function() {
+    del.sync([paths.stylesOutput, paths.scriptsOutput, paths.fontsOutput])
 });
 
-gulp.task('default', ['clean'], function() {
-    gulp.start('styles','scripts_hint', 'scripts', 'images', 'fonts');
+gulp.task('default', function() {
+    gulp.start('clean','css','jshint', 'js', 'img', 'fonts');
+});
+
+gulp.task('compile', function() {
+    gulp.start('css','jshint', 'js', 'img', 'fonts');
 });
