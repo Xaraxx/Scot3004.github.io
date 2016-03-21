@@ -1,6 +1,6 @@
 {
   "name": "Scot3004",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Página web de presentación de Sergio C. Orozco Torres",
   "main": "Gulpfile.js",
   "dependencies": {},
@@ -21,7 +21,8 @@
     "jshint": "^2.9.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lektor server"
   },
   "repository": {
     "type": "git",
@@ -29,8 +30,7 @@
   },
   "keywords": [
     "scot3004",
-    "bootstrap",
-    "startbootstrap"
+    "developer"
   ],
   "author": "Scot3004",
   "license": "AGPL-3.0",
