@@ -1,12 +1,11 @@
 
 
 # Scot3004
-[![Build Status](https://travis-ci.org/Scot3004/Scot3004-lektor.svg)](https://travis-ci.org/Scot3004/Scot3004-lektor)
+
+[![Build Status](https://travis-ci.org/Scot3004/Scot3004.svg)](https://travis-ci.org/Scot3004/Scot3004)
 [![devDependency Status](https://david-dm.org/Scot3004/Scot3004/dev-status.svg)](https://david-dm.org/Scot3004/Scot3004#info=devDependencies)
 
 Página personal de presentación de Sergio C. Orozco Torres
-
-[TOC]
 
 ## Motivación
 Practicar el desarrollo front-end para fortalecer habilidades y tener una plantilla base en caso que requiera iniciar otro desarrollo similar
