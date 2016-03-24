@@ -54,7 +54,7 @@ crashlytics-build.properties
 *.css.map
 
 ### Bower
-bower_components
+resources/bower_components
 
 ### Node
 node_modules

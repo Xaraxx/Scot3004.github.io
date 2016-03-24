@@ -18,20 +18,20 @@ var gulp = require('gulp'),
 
 var paths = {
     /* Source paths */
-    styles: ['assets_src/sass/main.scss'],
+    styles: ['resources/sass/main.scss'],
     scripts: [
-        'assets_src/js/grayscale.js',
-        'assets_src/js/main.js'
+        'resources/js/grayscale.js',
+        'resources/js/main.js'
     ],
     vendor_scripts: [
-        'bower_components/jquery/dist/jquery.js',
-        'bower_components/jquery.easing/js/jquery.easing.js',
-        'bower_components/bootstrap/dist/js/bootstrap.js'
+        'resources/bower_components/jquery/dist/jquery.js',
+        'resources/bower_components/jquery.easing/js/jquery.easing.js',
+        'resources/bower_components/bootstrap/dist/js/bootstrap.js'
     ],
-    images: ['assets_src/img/**'],
+    images: ['resources/img/**'],
     fonts: [
-        'bower_components/bootstrap/fonts/*',
-        'bower_components/font-awesome/fonts/*'
+        'resources/bower_components/bootstrap/fonts/*',
+        'resources/bower_components/font-awesome/fonts/*'
     ],
 
     /* Output paths */
