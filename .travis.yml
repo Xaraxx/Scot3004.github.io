@@ -8,6 +8,7 @@ install:
     - "pip install Lektor"
 before_script:
     - npm install -g bower
+    - npm install
     - bower install
     - gulp compile
 script: "lektor build && lektor deploy ghpages"
