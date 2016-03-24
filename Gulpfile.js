@@ -27,7 +27,7 @@ var paths = {
     vendor_scripts: [
         'assets_src/bower_components/jquery/dist/jquery.js',
         'assets_src/bower_components/jquery.easing/js/jquery.easing.js',
-        'assets_src/bower_components/bootstrap/dist/js/bootstrap.js'
+        'assets_src/bower_components/bootstrap/dist/js/bootstrap.js',
     ],
     images: ['assets_src/img/**'],
     fonts: [
@@ -44,18 +44,16 @@ var paths = {
 
 /* Tasks */
 gulp.task('css', function() {
-    return sass(paths.styles,{ style: 'expanded' })
-        .pipe(gulp.dest(paths.stylesOutput))
+    return sass(paths.styles,{ style: 'compressed' })
         .pipe(rename({suffix: '.min'}))
-        .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest(paths.stylesOutput));
 });
+
 
 gulp.task('js', function() {
 
     return gulp.src(paths.vendor_scripts.concat(paths.scripts))
         .pipe(concat('main.js'))
-        .pipe(gulp.dest(paths.scriptsOutput))
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
         .pipe(gulp.dest(paths.scriptsOutput));
