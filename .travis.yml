@@ -4,5 +4,7 @@ cache:
   directories:
     - $HOME/.cache/pip
     - $HOME/.cache/lektor/builds
-install: "pip install Lektor"
+install:
+    - "bower install"
+    - "pip install Lektor"
 script: "lektor build && lektor deploy ghpages"
