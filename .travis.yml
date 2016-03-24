@@ -9,4 +9,5 @@ install:
 before_script:
     - npm install -g bower
     - bower install
+    - gulp compile
 script: "lektor build && lektor deploy ghpages"
