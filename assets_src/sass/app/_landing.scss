@@ -44,6 +44,11 @@
   }
 }
 
+@media(min-width:$screen-xs-max) {
+  .page {
+    min-height: 100%;
+  }
+}
 
 ul.banner-social-buttons {
   margin-top: 0;
@@ -75,11 +80,10 @@ ul.banner-social-buttons {
 @media(min-width:$screen-xs-max) {
 
   .content-section {
-    padding-top: 250px;
-  }
-
-  .download-section {
-    padding: 100px 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    min-height:100%;
   }
 
   #map {
