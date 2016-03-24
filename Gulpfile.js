@@ -5,7 +5,6 @@
 /* Get dependencies */
 var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
-    cleanCSS = require('gulp-clean-css'),
     jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
@@ -25,14 +24,14 @@ var paths = {
         'assets_src/js/main.js'
     ],
     vendor_scripts: [
-        'assets_src/bower_components/jquery/dist/jquery.js',
-        'assets_src/bower_components/jquery.easing/js/jquery.easing.js',
-        'assets_src/bower_components/bootstrap/dist/js/bootstrap.js',
+        'bower_components/jquery/dist/jquery.js',
+        'bower_components/jquery.easing/js/jquery.easing.js',
+        'bower_components/bootstrap/dist/js/bootstrap.js'
     ],
     images: ['assets_src/img/**'],
     fonts: [
-        'assets_src/bower_components/bootstrap/fonts/*',
-        'assets_src/bower_components/font-awesome/fonts/*'
+        'bower_components/bootstrap/fonts/*',
+        'bower_components/font-awesome/fonts/*'
     ],
 
     /* Output paths */
