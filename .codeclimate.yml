@@ -20,4 +20,5 @@ ratings:
   - "**.js"
   - "**.py"
 exclude_paths:
-  - "**/*.min.js
+  - "**/*.min.js"
+
