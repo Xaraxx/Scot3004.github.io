@@ -1,6 +1,7 @@
 
 .navbar-custom {
   margin-bottom: 0;
+  border-bottom: 1px solid $grayscale-light;
   border-bottom: 1px solid transparentize($grayscale-light, 0.7);
   text-transform: uppercase;
   font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -35,6 +36,7 @@
 
       &.active {
         outline: none;
+        background-color: $grayscale-light;
         background-color: transparentize($grayscale-light, 0.7);
       }
 
@@ -47,6 +49,7 @@
         &:focus,
         &.active {
           outline: none;
+          background-color: $grayscale-light;
           background-color: transparentize($grayscale-light, 0.7);
         }
       }

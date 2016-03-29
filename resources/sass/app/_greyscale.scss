@@ -51,6 +51,7 @@ a {
   &:hover,
   &:focus {
     text-decoration: none;
+
     color: darken($grayscale-primary,0.2);
   }
 }
@@ -77,6 +78,7 @@ a {
     &:focus {
         outline: none;
         color: white;
+        background: white;
         background: rgba(white, 0.1);
     }
     i.animated {
