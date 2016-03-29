@@ -12,7 +12,8 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
     del = require('del'),
-    newer = require('gulp-newer');
+    newer = require('gulp-newer'),
+    csslint = require('gulp-csslint');
 
 /* Set paths */
 
@@ -46,6 +47,12 @@ gulp.task('css', function() {
     return sass(paths.styles,{ style: 'compressed' })
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(paths.stylesOutput));
+});
+
+gulp.task('csslint', function() {
+   sass(paths.styles,{ style: 'expanded' })
+    .pipe(csslint())
+    .pipe(csslint.reporter());
 });
 
 
