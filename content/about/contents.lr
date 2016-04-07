@@ -1,7 +1,0 @@
-title: Acerca de
----
-body: Este sitio es la demostración de mis conocimientos en programación y mis paseos en bici
----
-_slug: about
----
-_template: landing.html
