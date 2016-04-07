@@ -22,9 +22,6 @@ Desarrollar un sitio web informativo que demuestre los conocimientos y habilidad
 * Página de presentación como desarrollador
 * Desarrollar blog de las cosas aprendidas
 
-![]({{site.baseurl}}//av_rio.jpeg)
-
-
 ## Enlaces útiles
 * [Bootstrap](http://getbootstrap.com/)
 * [Bower](http://bower.io/)
