@@ -13,33 +13,37 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     del = require('del'),
     newer = require('gulp-newer'),
-    csslint = require('gulp-csslint');
+    csslint = require('gulp-csslint'),
+    express = require('express'),    
+    spawn = require('child_process').spawn;
+
+var EXPRESS_PORT = 4000;
+var EXPRESS_ROOT = '_site/'
 
 /* Set paths */
 
 var paths = {
     /* Source paths */
-    styles: ['resources/sass/main.scss'],
+    styles: ['css/main.scss'],
     scripts: [
         'resources/js/grayscale.js',
         'resources/js/main.js'
     ],
     vendor_scripts: [
-        'resources/bower_components/jquery/dist/jquery.js',
-        'resources/bower_components/jquery.easing/js/jquery.easing.js',
-        'resources/bower_components/bootstrap/dist/js/bootstrap.js'
+        'bower_components/jquery/dist/jquery.js',
+        'bower_components/jquery.easing/js/jquery.easing.js',
+        'bower_components/bootstrap/dist/js/bootstrap.js'
     ],
     images: ['resources/img/**'],
     fonts: [
-        'resources/bower_components/bootstrap/fonts/*',
-        'resources/bower_components/font-awesome/fonts/*'
+        'bower_components/bootstrap/fonts/*',
+        'bower_components/font-awesome/fonts/*'
     ],
 
     /* Output paths */
-    stylesOutput: 'assets/styles',
-    scriptsOutput: 'assets/js',
-    imagesOutput: 'assets/img',
-    fontsOutput: 'assets/fonts'
+    scriptsOutput: 'js',
+    imagesOutput: 'img',
+    fontsOutput: 'fonts'
 };
 
 /* Tasks */
@@ -84,7 +88,7 @@ gulp.task('fonts', function() {
 });
 
 gulp.task('clean', function() {
-    del.sync([paths.stylesOutput, paths.scriptsOutput, paths.fontsOutput])
+    del.sync([paths.scriptsOutput, paths.fontsOutput])
 });
 
 gulp.task('default', function() {
@@ -93,4 +97,11 @@ gulp.task('default', function() {
 
 gulp.task('compile', function() {
     gulp.start('css','jshint', 'js', 'img', 'fonts');
+});
+
+// Run static file server
+gulp.task('serve', function () {
+    var server = express();
+    server.use(express.static(EXPRESS_ROOT));
+    server.listen(EXPRESS_PORT);
 });

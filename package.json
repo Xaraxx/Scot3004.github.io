@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Página web de presentación de Sergio C. Orozco Torres",
   "main": "Gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.13.4"
+  },
   "devDependencies": {
     "connect": "^3.3.4",
     "connect-livereload": "^0.5.3",
@@ -24,7 +26,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lektor server"
+    "start": "gulp serve"
   },
   "repository": {
     "type": "git",
@@ -37,7 +39,7 @@
   "author": "Scot3004",
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/Scot3004/scot3004-lektor/issues"
+    "url": "https://github.com/Scot3004/Scot3004/issues"
   },
   "homepage": "https://Scot3004.github.io"
 }
