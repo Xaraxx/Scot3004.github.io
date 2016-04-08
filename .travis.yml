@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - 2.1
  
-install: gem install jekyll html-proofer jekyll-sitemap
+install: bundle install
 script: jekyll build && htmlproofer ./_site
 
 env:
