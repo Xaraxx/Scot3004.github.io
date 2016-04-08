@@ -1,9 +1,3 @@
----
-layout: page
-title: Acerca de
-permalink: /acerca/
----
-
 # Scot3004
 
 [![Build Status](https://travis-ci.org/Scot3004/Scot3004.svg)](https://travis-ci.org/Scot3004/Scot3004)
