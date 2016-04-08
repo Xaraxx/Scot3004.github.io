@@ -31,3 +31,6 @@ exclude:
   - "Rakefile"
   - "config.rb"
   - "package.json"
+  
+gems:
+  - jekyll-sitemap
