@@ -1,0 +1,63 @@
+---
+layout: post
+title: Uso de jquery con ajax
+date: '2011-07-07T20:56:00.006-05:00'
+author: Sergio C. Orozco Torres
+tags:
+- tutorial
+- jquery
+- html
+modified_time: '2011-07-25T17:58:51.044-05:00'
+blogger_id: tag:blogger.com,1999:blog-3290987933179858425.post-2111565777799621636
+blogger_orig_url: http://scot3004.blogspot.com/2011/07/uso-de-jquery-con-ajax.html
+---
+
+&nbsp;Recientemente ando experimentando con ajax, usando como framework jquery, implementando elementos css3 y entre todo ese sancocho he encontrado lo siguiente:<br />
+claro no aspiren que sea eficiente<br />
+Para cargar una pagina y un script<br />
+<code><br />
+function contenido(pagina){<br />
+&nbsp;&nbsp;&nbsp;$('#content').load(pagina+".html");<br />
+&nbsp;&nbsp;&nbsp;//cargar una pagina dada en un div cuyo id sea content   <br />
+&nbsp;&nbsp;&nbsp;$.getScript(pagina+".js"); //cargar un script<br />
+}<br />
+</code><br />
+Para cargar un date query en el main<br />
+<code><br />
+$(document).ready(function(){ <br />
+&nbsp;&nbsp;&nbsp;$( "#datepicker" ).datepicker();<br />
+});<br />
+</code><br />
+usado en el documento externo<br />
+cargar un formulario enviarlo por post y que lo procese un php, forma ideal<br />
+<code><br />
+$("#formulario").submit( function () {<br />
+&nbsp;&nbsp;&nbsp;$.ajax({ <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: 'POST',<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url: $(this).attr('action')<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data: $(this).serialize(),<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Mostramos un mensaje con la respuesta de PHP<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success: function(data) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(data);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});        <br />
+return false;<br />
+});<br />
+</code><br />
+forma burda y funcional<br />
+<code><br />
+&lt;form action="recibidos.php" autocomplete="on" id="formulario" <br />
+&nbsp;&nbsp;&nbsp;method="POST" name="formulario" onsubmit="$.ajax({<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: "POST",<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url: "recibidos.php",<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data: $(this).serialize(),<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Mostramos un mensaje con la respuesta de PHP<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success: function(data) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(data);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return false;"&gt;<br />
+&lt;/form&gt;<br />
+<br />
+<br />
+</code>
