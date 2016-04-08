@@ -24,7 +24,7 @@ var EXPRESS_ROOT = '_site/'
 
 var paths = {
     /* Source paths */
-    styles: ['css/main.scss'],
+    styles: ['_sass/main.scss'],
     scripts: [
         'resources/js/grayscale.js',
         'resources/js/main.js'
@@ -41,6 +41,7 @@ var paths = {
     ],
 
     /* Output paths */
+    stylesOutput: 'css',
     scriptsOutput: 'js',
     imagesOutput: 'img',
     fontsOutput: 'fonts'
@@ -96,7 +97,7 @@ gulp.task('default', function() {
 });
 
 gulp.task('compile', function() {
-    gulp.start('css','jshint', 'js', 'img', 'fonts');
+    gulp.start('css', 'js', 'img', 'fonts');
 });
 
 // Run static file server
