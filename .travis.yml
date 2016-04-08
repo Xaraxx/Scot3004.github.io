@@ -2,8 +2,8 @@ language: ruby
 rvm:
 - 2.1
  
-install: bundle install
-script: jekyll build && htmlproofer ./_site
+install: gem install jekyll
+script: jekyll build
 
 env:
   global:
