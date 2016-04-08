@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SQLite NetBeans</title>
+  <meta name="description" content="Como podemos darnos cuenta para tener una aplicacion robusta necesitamos un motor de bases de datos, aunque mysql es el mas usado y el mas optimo para servid...">
+
+  <link rel="stylesheet" href="/css/main.min.css">
+  <link rel="canonical" href="http://www.scot3004.xyz/2011/06/02/sqlite-netbeans.html">
+  <link rel="alternate" type="application/rss+xml" title="Scot3004" href="http://www.scot3004.xyz/feed.xml">
+  
+  <link rel="icon" type="image/png" href="/img/logo.png">
+<!--[if IE]><link rel="shortcut icon" href="/img/favicon.ico' "/><![endif]-->
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+</head>
+
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">SQLite NetBeans</h1>
+    <p class="post-meta"><time datetime="2011-06-02T11:17:00-05:00" itemprop="datePublished">Jun 2, 2011</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Sergio C. Orozco Torres</span></span></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <div dir="ltr" style="text-align: left;" trbidi="on"><div style="text-align: justify;">Como podemos darnos cuenta para tener una aplicacion robusta necesitamos un motor de bases de datos, aunque mysql es el mas usado y el mas optimo para servidores, al momento de hacer aplicaciones que sean facilmente portables se hace un infierno usarlo, por eso en estos casos es recomendable usar un motor de bases de datos mas ligero, alli es donde entra a jugar SQLite.</div><div style="text-align: justify;">SQLite es un gestor de bases de datos que proporciona gran portabilidad debido a que este funciona a travez de archivos, ahora bien este permite ademas usar el estandar SQL, muchos se preguntaran por que usar SQLite si puedo almacenar directamente al archivo y me ahorro todo lo que tenga que ver con la creacion de la base de datos creando conectors y cosas asi, si puedo usar un buffer y guardar yo mismo la base de datos en un archivo, bueno resulta que SQLite te ahorra esa parte, ademas en caso de querer un motor mas potente, no te tocara reescribir si creaste un conector abierto a las posibilidades, como yo XD, en fin.</div><div style="text-align: justify;"><a name='more'></a><br />
+</div><div style="text-align: justify;">respecto a los pasos con url las instrucciones de instalacion estan en la pagina de cada uno</div><div style="text-align: justify;">1: instalar netbeans en caso que no lo tengas instalado <a href="http://www.netbeans.org/">http://www.netbeans.org/</a></div><div style="text-align: justify;">2: crea tu proyecto en java netbeans</div><div style="text-align: justify;">3: descargar sqlite para crear la base de datos <a href="http://www.sqlite.org/">http://www.sqlite.org/</a></div><div style="text-align: justify;">4: si no sabes de sql, te aconsejo buscar un editor grafico <a href="http://sqliteman.com/">http://sqliteman.com</a></div><div style="text-align: justify;">5: crear la base de datos </div><div style="text-align: justify;">6: descarga sqlite jbdc <a href="http://www.zentus.com/sqlitejdbc/">http://www.zentus.com/sqlitejdbc/</a></div><div style="text-align: justify;">7: te aconsejo que el driver lo guardes en una carpeta lib o algo asi en la carpeta de tu proyecto</div><div style="text-align: justify;">8: añade sqlite jbdc que descargaste en netbeans abriendo el proyecto, clic derecho en donde dice librerias añadir jar/carpeta y selecciona sqlitejbdc</div><div style="text-align: justify;">9: finalmente crea las clases de conexion a la base de datos y los respectivos DAO <br />
+10: ya que tienes el driver sqlite instalado y configurado, emocionate viendo que opciones te da tener una base de datos en tu proyecto</div><div style="text-align: justify;"></div><div style="text-align: justify;">por ultimo una vista previa de mi trabajo<br />
+hecho en&nbsp; GNU/Linux<br />
+<br />
+</div><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-Uh4mEjsnmZc/TecrJnVbChI/AAAAAAAAAKQ/jh5bqLy2zkM/s1600/instant%25C3%25A1nea1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="480" src="http://1.bp.blogspot.com/-Uh4mEjsnmZc/TecrJnVbChI/AAAAAAAAAKQ/jh5bqLy2zkM/s640/instant%25C3%25A1nea1.png" width="640" /></a></div><br />
+<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-ZPMDat83nvQ/TecrLV8YRxI/AAAAAAAAAKU/LY9L4uVOOlQ/s1600/instant%25C3%25A1nea2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="480" src="http://3.bp.blogspot.com/-ZPMDat83nvQ/TecrLV8YRxI/AAAAAAAAAKU/LY9L4uVOOlQ/s640/instant%25C3%25A1nea2.png" width="640" /></a></div><br />
+<div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-qxXGsXJujfg/TecrMatevpI/AAAAAAAAAKY/1XTnmPcWNK8/s1600/instant%25C3%25A1nea3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="480" src="http://4.bp.blogspot.com/-qxXGsXJujfg/TecrMatevpI/AAAAAAAAAKY/1XTnmPcWNK8/s640/instant%25C3%25A1nea3.png" width="640" /></a></div><br />
+<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-NQSkx4cSGSA/TecrNef8U8I/AAAAAAAAAKc/vdUNi-wzEK0/s1600/instant%25C3%25A1nea4.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="480" src="http://2.bp.blogspot.com/-NQSkx4cSGSA/TecrNef8U8I/AAAAAAAAAKc/vdUNi-wzEK0/s640/instant%25C3%25A1nea4.png" width="640" /></a></div><br />
+<div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-sSOke2IJHco/TecrOLZnoHI/AAAAAAAAAKg/Udnsf2A9_o0/s1600/instant%25C3%25A1nea5.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="480" src="http://3.bp.blogspot.com/-sSOke2IJHco/TecrOLZnoHI/AAAAAAAAAKg/Udnsf2A9_o0/s640/instant%25C3%25A1nea5.png" width="640" />&nbsp;</a></div><div class="separator" style="clear: both; text-align: center;"><br />
+</div><div class="separator" style="clear: both; text-align: center;"><br />
+</div><div style="text-align: justify;"></div></div>
+  </div>
+
+</article>
+
+        <script src="/js/main.min.js"></script>
+  </body>
+
+</html>
