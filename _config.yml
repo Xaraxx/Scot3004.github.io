@@ -50,3 +50,6 @@ defaults:
     values:
       layout: "default"
       comments: true
+
+tag_title_prefix: ''
+tag_title_suffix: ' - posts etiquetados'
