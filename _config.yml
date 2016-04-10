@@ -16,6 +16,10 @@ url: "http://www.scot3004.xyz" # the base hostname & protocol for your site
 twitter_username: scot3004
 github_username: scot3004
 
+disqus: scot3004
+comments: true
+
+
 # Build settings
 markdown: kramdown
 
@@ -31,6 +35,15 @@ exclude:
   - "Rakefile"
   - "config.rb"
   - "package.json"
-  
+
 gems:
   - jekyll-sitemap
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "default"
+      comments: true
