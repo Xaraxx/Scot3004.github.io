@@ -44,10 +44,8 @@
   }
 }
 
-@media(min-width:$screen-xs-max) {
-  .page {
-    min-height: 100%;
-  }
+.page {
+  min-height: 100%;
 }
 
 @media(min-width:$screen-xs-max) {
