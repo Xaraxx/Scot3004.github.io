@@ -24,24 +24,29 @@ layout: default
         </span>
       </span>
       {% endif %}</p>
-    <ul>
+    <ul class="list-inline">
     {% for tag in page.tags %}
-      <li><a href="{{ site.url | append:site.baseurl }}/tag/{{ tag }}">{{ tag }}</a></li>
+      <li><a class="btn btn-default btn-xs" href="{{ site.url | append:site.baseurl }}/tag/{{ tag }}">{{ tag }}</a></li>
     {% endfor %}
   </ul>
   </header>
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
+    {% if page.blogger_orig_url %}
+      <p class="migrated_blogger">
+        Migrado desde <a href="{{page.blogger_orig_url}}">blogger</a>
+      </p>
+    {% endif %}
   </div>
 
 </article>
-
+{% include disqus-comments.html %}
 </div>
 <div class="col-md-4 hidden-xs">
           {% include sidebar.html %}
         </div>
-    {% include disqus-comments.html %}
+
   </div>
   {% include footer.html %}
 </div>
