@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+<div class="container container-center">
+      <div class="row">
+        <div class="col-md-8">
 <article class="post">
 
   <header class="post-header">
@@ -10,6 +13,14 @@ layout: default
   <div class="post-content">
     {{ content }}
   </div>
-  {{page.prueba}}
 
 </article>
+
+</div>
+<div class="col-md-4 hidden-xs">
+          {% include sidebar.html %}
+        </div>
+    {% include disqus-comments.html %}
+  </div>
+  {% include footer.html %}
+</div>
