@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://www.scot3004.xyz/desarrollo/2016/04/09/configuracion-disqus.html</loc>
+<lastmod>2016-04-09T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>http://www.scot3004.xyz/jekyll/update/2016/03/29/welcome-to-jekyll.html</loc>
 <lastmod>2016-03-29T14:09:10-05:00</lastmod>
 </url>
@@ -45,16 +49,8 @@
 <lastmod>2011-06-02T11:17:00-05:00</lastmod>
 </url>
 <url>
-<loc>http://www.scot3004.xyz/2011/06/02/companeros-por-razones-practicas-creo.html</loc>
-<lastmod>2011-06-02T10:25:00-05:00</lastmod>
-</url>
-<url>
 <loc>http://www.scot3004.xyz/2011/05/13/algoritmo-de-la-rutina-diaria-blogger.html</loc>
 <lastmod>2011-05-13T13:02:00-05:00</lastmod>
-</url>
-<url>
-<loc>http://www.scot3004.xyz/2011/03/24/la-locura-de-cambiar-los-repos-de.html</loc>
-<lastmod>2011-03-24T14:15:00-05:00</lastmod>
 </url>
 <url>
 <loc>http://www.scot3004.xyz/2011/03/03/screenshoots-de-mi-chakra-bueno-en.html</loc>
@@ -76,9 +72,27 @@
 <loc>http://www.scot3004.xyz/about/</loc>
 </url>
 <url>
+<loc>http://www.scot3004.xyz/archive.html</loc>
+</url>
+<url>
 <loc>http://www.scot3004.xyz/blog.html</loc>
 </url>
 <url>
 <loc>http://www.scot3004.xyz/</loc>
+</url>
+<url>
+<loc>http://www.scot3004.xyz/tags.html</loc>
+</url>
+<url>
+<loc>http://www.scot3004.xyz/tag/tutorial/</loc>
+</url>
+<url>
+<loc>http://www.scot3004.xyz/tag/jquery/</loc>
+</url>
+<url>
+<loc>http://www.scot3004.xyz/tag/html/</loc>
+</url>
+<url>
+<loc>http://www.scot3004.xyz/tag/aprendizaje%2520autonomo/</loc>
 </url>
 </urlset>
