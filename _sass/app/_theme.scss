@@ -1,0 +1,84 @@
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+.sidebar{
+  li {
+    margin-top: .7em;
+    line-height: 1em;
+  }
+}
+
+.well {
+  background-color: #444;
+  box-shadow: 0px 0px 0px 0px, 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border: 0px;
+  border-radius: 6px;
+  main-page {
+    width: 75%;
+  }
+}
+
+.note {
+  position:relative;
+  border: 0;
+  padding-left: 30px;
+}
+.note:before {
+  content: "\f06a";
+  font-size: 2em;
+  font-family: FontAwesome;
+  left: 0px;
+  position:absolute;
+  top: 0;
+  color: #87CEFA;
+}
+.warning:before {
+  content: "\f071";
+  color: yellow;
+}
+
+.toc {
+  background-color: 2c2c2c;
+  margin-left: -19px;
+  margin-right: -19px;
+}
+
+.box h3{
+	text-align:center;
+	position:relative;
+	top:80px;
+}
+.box {
+	width:70%;
+	height:200px;
+	background:#FFF;
+	margin:40px auto;
+}
+
+.wrapper{
+  min-height: 100%;
+  position: relative;
+}
+
+.content{
+  padding-bottom: 250px;
+}
+
+.key {
+  font-size: 1.0em;
+  box-shadow: 1px 0 1px 0 #555, 0 1px 0 2px #888, 0 2px 0 2px #777;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin: 2px 3px;
+  padding: 0px 5px;
+}
