@@ -7,6 +7,8 @@
 
 $foreground: #A9B7C6;
 $background: #2B2B2B;
+$pre-foreground: #ff6347;
+$pre-background: #333;
 $selectionForeground: #A9B7C6;
 $selectionBackground: #214283;
 $operators: #A9B7C6;
@@ -19,6 +21,11 @@ $tag: #f1c829;
 $attributes: #9876AA;
 $comments: #75715e;
 $linenos: #A9B7C6;
+$error: #960050;
+$error-bg: #1e0010;
+$code: #ddd;
+$scrollbar: #34362e;
+$scrollbar-thumb: #555;
 
 .highlight {
   @include rounded(4px);
@@ -35,24 +42,24 @@ $linenos: #A9B7C6;
     word-wrap: normal;
     border: 0;
     white-space: pre;
-    background-color: #333;
-    color: #ddd;
+    background-color: $pre-background;
+    color: $code;
 
     code {
       white-space: pre;
-      color: #ddd;
+      color: $code;
     }
   }
 
   pre::-webkit-scrollbar {
     height: 10px;
-    background-color: #34362e;
+    background-color: $scrollbar;
     border-radius: 0 0 4px 4px;
   }
 
   pre::-webkit-scrollbar-thumb {
     @include rounded(4px);
-    background-color: #555;
+    background-color: $scrollbar-thumb;
   }
 
   ::selection {
@@ -75,8 +82,8 @@ h5 > code,
 p > pre,
 p > code,
 .note > code {
-  color: #ff6347;
-  background-color: #333;
+  color: $pre-foreground;
+  background-color: $pre-background;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -88,18 +95,18 @@ p > code,
 
 // line numbers
 .lineno { border-right: dashed 1px $linenos; color: $linenos; padding-right: 5px; padding-left: 0;}
-.hll { background-color: #49483e; }
+.hll { background-color: $background; }//Fallback
 .c { color: $comments; } // Comment
-.err { color: #960050; background-color: #1e0010; } // Error
+.err { color: $error; background-color: $error-bg; } // Error
 .k { color: $keywords; } // Keyword
 .l { color: $numbers;} // Literal
 .n { color: $varAndProp; } // Name
 .o { color: $operators; } // Operator
 .p { color: $varAndProp; } // Punctuation
-.cm { color: #75715e; } // Comment.Multiline
-.cp { color: #75715e; } // Comment.Preproc
-.c1 { color: #75715e; } // Comment.Single
-.cs { color: #75715e; } // Comment.Special
+.cm { color: $comments; } // Comment.Multiline
+.cp { color: $comments; } // Comment.Preproc
+.c1 { color: $comments; } // Comment.Single
+.cs { color: $comments; } // Comment.Special
 .ge { font-style: italic; } // Generic.Emph
 .gs { font-weight: bold; } // Generic.Strong
 .kc { color: $keywords; } // Keyword.Constant
@@ -115,7 +122,7 @@ p > code,
 .nb { color: $varAndProp; } // Name.Builtin
 .nc { color: $names; } // Name.Class
 .no { color: $keywords; } // Name.Constant
-.nd { color: #f1c829; } // Name.Decorator
+.nd { color: $tag; } // Name.Decorator
 .ni { color: $varAndProp; } // Name.Entity
 .ne { color: $names; } // Name.Exception
 .nf { color: $names; } // Name.Function
@@ -148,7 +155,7 @@ p > code,
 .vi { color: $varAndProp; } // Name.Variable.Instance
 .il { color: $numbers; } // Literal.Number.Integer.Long
 //.gh { } // Generic Heading & Diff Header
-.gu { color: #75715e; } // Generic.Subheading & Diff Unified/Comment?
+.gu { color: $comments; } // Generic.Subheading & Diff Unified/Comment?
 .gd { color: $operators; } // Generic.Deleted & Diff Deleted
 .gi { color: $names; } // Generic.Inserted & Diff Inserted
 .l-Scalar-Plain {color: $names; }
