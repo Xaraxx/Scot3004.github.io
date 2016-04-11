@@ -14,7 +14,7 @@ var gulp = require('gulp'),
     del = require('del'),
     newer = require('gulp-newer'),
     csslint = require('gulp-csslint'),
-    express = require('express'),    
+    express = require('express'),
     spawn = require('child_process').spawn;
 
 var EXPRESS_PORT = 4000;
@@ -26,8 +26,7 @@ var paths = {
     /* Source paths */
     styles: ['_sass/main.scss'],
     scripts: [
-        'resources/js/grayscale.js',
-        'resources/js/main.js'
+        'resources/js/**'
     ],
     vendor_scripts: [
         'bower_components/jquery/dist/jquery.js',
@@ -92,8 +91,12 @@ gulp.task('clean', function() {
     del.sync([paths.scriptsOutput, paths.fontsOutput])
 });
 
-gulp.task('default', function() {
-    gulp.start('clean','css','jshint', 'js', 'img', 'fonts');
+//Watch task
+gulp.task('default',function() {
+    gulp.watch('_sass/**/*.scss',['css']);
+    gulp.watch(paths.images,['img']);
+    gulp.watch(paths.scripts,['js']);
+    gulp.watch(paths.fonts,['fonts']);
 });
 
 gulp.task('compile', function() {
