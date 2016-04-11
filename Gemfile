@@ -1,6 +1,9 @@
 source "https://rubygems.org"
-gem "jekyll"
+
 gem "rake"
-gem "html-proofer"
+gem "jekyll"
 gem "jekyll-sitemap"
 gem "jekyll-paginate"
+gem "scss-lint"
+gem "html-proofer"
+gem "compass"

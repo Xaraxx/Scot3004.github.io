@@ -2,10 +2,10 @@
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "assets/styles"
-sass_dir = "resources/sass"
-images_dir = "assets/images"
-javascripts_dir = "assets/js"
+css_dir = "css"
+sass_dir = "_/sass"
+images_dir = "img"
+javascripts_dir = "js"
 
 add_import_path "bower_components/Hover/scss/"
 add_import_path "bower_components/bootstrap-sass-official/assets/stylesheets/"
