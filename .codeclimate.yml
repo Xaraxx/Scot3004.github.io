@@ -7,12 +7,14 @@ engines:
     config:
       languages:
       - javascript
-      - python
+      - ruby
   eslint:
     enabled: true
   fixme:
     enabled: true
   rubocop:
+    enabled: true
+  scss-lint:
     enabled: true
 ratings:
   paths:
