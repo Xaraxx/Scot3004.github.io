@@ -1,3 +1,4 @@
+// scss-lint:disable NameFormat
 @mixin rounded($radius:4px) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
@@ -20,10 +21,11 @@ $comments: #75715e;
 $linenos: #A9B7C6;
 
 .highlight {
+  @include rounded(4px);
+
   margin-bottom: 1.5em;
   color: $foreground;
   background-color: $background;
-  @include rounded(4px);
 
   pre {
     position: relative;
@@ -49,8 +51,8 @@ $linenos: #A9B7C6;
   }
 
   pre::-webkit-scrollbar-thumb {
-    background-color: #555;
     @include rounded(4px);
+    background-color: #555;
   }
 
   ::selection {
@@ -60,9 +62,9 @@ $linenos: #A9B7C6;
 }
 
 .highlight > pre {
-  -webkit-box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1), 0 -1px 0 rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1), 0 -1px 0 rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1), 0 -1px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 1px 10px rgba(0, 0, 0, .3), 0 1px 0 rgba(255, 255, 255, .1), 0 -1px 0 rgba(0, 0, 0, .5);
+  -moz-box-shadow: inset 0 1px 10px rgba(0, 0, 0, .3), 0 1px 0 rgba(255, 255, 255, .1), 0 -1px 0 rgba(0, 0, 0, .5);
+  box-shadow: inset 0 1px 10px rgba(0, 0, 0, .3), 0 1px 0 rgba(255, 255, 255, .1), 0 -1px 0 rgba(0, 0, 0, .5);
 }
 
 .highlight,
@@ -73,14 +75,14 @@ h5 > code,
 p > pre,
 p > code,
 .note > code {
-  color: tomato;
+  color: #ff6347;
   background-color: #333;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1), 0 -1px 0 rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1), 0 -1px 0 rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1), 0 -1px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 1px 10px rgba(0, 0, 0, .3), 0 1px 0 rgba(255, 255, 255, .1), 0 -1px 0 rgba(0, 0, 0, .5);
+  -moz-box-shadow: inset 0 1px 10px rgba(0, 0, 0, .3), 0 1px 0 rgba(255, 255, 255, .1), 0 -1px 0 rgba(0, 0, 0, .5);
+  box-shadow: inset 0 1px 10px rgba(0, 0, 0, .3), 0 1px 0 rgba(255, 255, 255, .1), 0 -1px 0 rgba(0, 0, 0, .5);
 }
 
 

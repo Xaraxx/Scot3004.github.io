@@ -1,8 +1,7 @@
 
 .navbar-custom {
   margin-bottom: 0;
-  border-bottom: 1px solid $grayscale-light;
-  border-bottom: 1px solid transparentize($grayscale-light, 0.7);
+  border-bottom: 1px solid transparentize($grayscale-light, .7);
   text-transform: uppercase;
   font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
   background-color: $grayscale-dark;
@@ -36,8 +35,7 @@
 
       &.active {
         outline: none;
-        background-color: $grayscale-light;
-        background-color: transparentize($grayscale-light, 0.7);
+        background-color: transparentize($grayscale-light, .7);
       }
 
       a {
@@ -49,8 +47,7 @@
         &:focus,
         &.active {
           outline: none;
-          background-color: $grayscale-light;
-          background-color: transparentize($grayscale-light, 0.7);
+          background-color: transparentize($grayscale-light, .7);
         }
       }
     }
@@ -75,7 +72,7 @@
   }
 
   .navbar-custom.top-nav-collapse {
-    border-bottom: 1px solid transparentize($grayscale-light, 0.7);
+    border-bottom: 1px solid transparentize($grayscale-light, .7);
   }
 
   .navbar-reserve {
