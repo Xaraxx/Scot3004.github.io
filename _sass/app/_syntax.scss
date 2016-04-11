@@ -34,7 +34,7 @@ $linenos: #A9B7C6;
     border: 0;
     white-space: pre;
     background-color: #333;
-    color: #ddd !important;
+    color: #ddd;
 
     code {
       white-space: pre;
@@ -52,7 +52,7 @@ $linenos: #A9B7C6;
     background-color: #555;
     @include rounded(4px);
   }
-  
+
   ::selection {
     background-color: $selectionBackground;
     color: $selectionForeground;
@@ -85,7 +85,7 @@ p > code,
 
 
 // line numbers
-.lineno { border-right: dashed 1px $linenos !important; color: $linenos; padding-right: 5px; padding-left: 0 !important;}
+.lineno { border-right: dashed 1px $linenos; color: $linenos; padding-right: 5px; padding-left: 0;}
 .hll { background-color: #49483e; }
 .c { color: $comments; } // Comment
 .err { color: #960050; background-color: #1e0010; } // Error
