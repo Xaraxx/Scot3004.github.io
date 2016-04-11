@@ -25,8 +25,11 @@
     "jshint": "^2.9.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp serve"
+    "test": "htmlproofer ./_site",
+    "run": "gulp serve",
+    "build": "jekyll build" ,
+    "start": "jekyll serve -w",
+    "dev": "gulp"
   },
   "repository": {
     "type": "git",
