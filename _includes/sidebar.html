@@ -1,17 +1,26 @@
-<div class="sidebar ">
-  <h2>Recent Posts</h2>
-  <ul>
-    {% for post in site.posts limit:5 %}
-    <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
-
 <div class="sidebar">
-  <h2>Etiquetas</h2>
-  <ul>
-    {% for tag in site.tags %}
-      <li><a href="{{ site.baseurl }}/tag/{{ tag[0] }}">{{ tag[0] }}</a></li>
-    {% endfor %}
-  </ul>
+  <div class="panel panel-default">
+    <div class="sidebar-heading">
+      <h2>Posts recientes</h2>
+    </div>
+    <div class="list-group">
+      {% for post in site.posts limit:5 %}
+      <a class="list-group-item" href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="sidebar-heading">
+      <h2>Etiquetas</h2>
+    </div>
+    <div class="list-group">
+      {% for tag in site.tags %}
+      <a class="list-group-item" href="{{ site.baseurl }}/tag/{{ tag[0] }}">{{ tag[0] }}</a>
+      {% endfor %}
+      <a class="list-group-item" href="{{ '/archive.html' | prepend: site.baseurl }}">Archivo del blog
+        <span class="badge">{{site.posts.size}}</span>
+      </a>
+    </div>
+  </div>
 </div>

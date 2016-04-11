@@ -10,15 +10,8 @@
   transition: $args;
 }
 
-.sidebar{
-  li {
-    margin-top: .7em;
-    line-height: 1em;
-  }
-}
-
 .well {
-  background-color: #444;
+
   box-shadow: 0px 0px 0px 0px, 0px 8px 16px rgba(0, 0, 0, 0.2);
   border: 0px;
   border-radius: 6px;
@@ -81,4 +74,22 @@
   border-radius: 3px;
   margin: 2px 3px;
   padding: 0px 5px;
+}
+
+.sidebar{
+  .list-group-item{
+    color: $grayscale-primary;
+
+    &:hover{
+      color: $grayscale-primary;
+    }
+  }
+}
+
+.sidebar-heading{
+  @extend .panel-heading;
+  h2{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
