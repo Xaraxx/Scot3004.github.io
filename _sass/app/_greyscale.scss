@@ -67,10 +67,10 @@ a {
   height: 70px;
   margin-top: 15px;
   padding: 7px 16px;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   border-radius: 100%;
   font-size: 40px;
-  color: #ffffff;
+  color: #fff;
   background: transparent;
   -webkit-transition: background .3s ease-in-out;
   -moz-transition: background .3s ease-in-out;
@@ -79,8 +79,8 @@ a {
   &:hover,
   &:focus {
     outline: none;
-    color: #ffffff;
-    background: rgba(#ffffff, .1);
+    color: #fff;
+    background: rgba(#fff, .1);
   }
 
   .animated {
@@ -153,7 +153,7 @@ a {
 }
 
 .btn-default {
-  @include button-variant($grayscale-primary, transparentize(#ffffff, 1), $grayscale-primary);
+  @include button-variant($grayscale-primary, transparentize(#fff, 1), $grayscale-primary);
 
   &:hover,
   &:focus {
