@@ -48,12 +48,12 @@ title: Blog
       {% endif %}
     {% else %}
       <li class="disabled">
-        <a href="#">&laquo;</a>
+        <a href="">&laquo;</a>
       </li>
     {% endif %}
     {% if paginator.page == 1 %}
       <li class="active">
-        <a href="#">1</a>
+        <a href="">1</a>
       </li>
     {% else %}
       <li>
@@ -63,7 +63,7 @@ title: Blog
     {% for count in (2..paginator.total_pages) %}
       {% if count == paginator.page %}
         <li class="active">
-          <a href="#">{{count}}</a>
+          <a href="">{{count}}</a>
         </li>
       {% else %}
         <li>
@@ -77,7 +77,7 @@ title: Blog
       </li>
     {% else %}
       <li class="disabled">
-        <a href="#">&raquo;</a>
+        <a href="">&raquo;</a>
       </li>
     {% endif %}
   </ul>
