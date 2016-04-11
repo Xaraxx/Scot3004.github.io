@@ -48,8 +48,15 @@
   min-height: 100%;
 }
 
-@media(min-width:$screen-xs-max) {
 
+.content-section {
+  .row{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media(min-width:$screen-xs-max) {
   .content-section {
     position: relative;
     top: 50%;
