@@ -6,6 +6,7 @@ install: gem install bundler
 script: 
  - bundle install
  - jekyll build
+ - scss-lint ./_sass
 
 env:
   global:
