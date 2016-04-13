@@ -53,3 +53,5 @@ defaults:
 
 tag_title_prefix: ''
 tag_title_suffix: ' - posts etiquetados'
+
+timezone: America/Bogota
