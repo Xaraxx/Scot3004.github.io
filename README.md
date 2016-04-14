@@ -32,3 +32,13 @@ Desarrollar un sitio web informativo que demuestre los conocimientos y habilidad
 
 ## Copyright and Licenses
 Copyright 2016 Scot3004. Code released under the [AGPL v3](LICENSE)
+
+## Instalación
+npm install
+npm install -g bower
+bower install
+
+gem install bundler
+bundle install
+
+gulp
