@@ -1,0 +1,27 @@
+.sidebar {
+  .list-group-item {
+    color: $grayscale-primary;
+
+    &:hover {
+      color: $grayscale-primary;
+    }
+  }
+}
+
+.sidebar-heading {
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.kalam {
+  font-family: 'Kalam', cursive;
+}
+
+@media(max-width:$screen-xs-max) {
+  body {
+    padding-top: 56px;
+  }
+}

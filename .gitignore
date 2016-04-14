@@ -65,3 +65,6 @@ images
 
 #jekyll site
 _site
+
+## Gemfile
+Gemfile.lock

@@ -1,0 +1,84 @@
+---
+layout: page
+title: Blog
+---
+
+{% for post in paginator.posts %}
+  <h2 class="post-title">
+    <a href="{{post.url | prepend:site.baseurl}}">
+      {{ post.title }}
+    </a>
+  </h2>
+
+  <div class="post-meta">
+  <span class="post-time">
+    <i class="fa fa-calendar"></i>
+    <time>{{ post.date | date_to_string }}</time>
+  </span>
+  <span>
+  <ul class="list-inline">
+    {% for tag in post.tags %}
+      <li><a class="btn btn-default btn-xs" href="{{ append:site.baseurl }}/tag/{{ tag }}">{{ tag }}</a></li>
+    {% endfor %}
+  </ul>
+</span>
+</div>
+
+  <div class="post-descr">
+    <p>
+      {{ post.description }}
+    </p>
+  </div>
+{% endfor %}
+
+<nav>
+  <ul class="pagination">
+
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <li>
+          <a href="/blog">&laquo;</a>
+        </li>
+      {% else %}
+        <li>
+          <a href="/blog/{{paginator.previous_page}}" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+      {% endif %}
+    {% else %}
+      <li class="disabled">
+        <a href="">&laquo;</a>
+      </li>
+    {% endif %}
+    {% if paginator.page == 1 %}
+      <li class="active">
+        <a href="">1</a>
+      </li>
+    {% else %}
+      <li>
+        <a href="/blog">1</a>
+      </li>
+    {% endif %}
+    {% for count in (2..paginator.total_pages) %}
+      {% if count == paginator.page %}
+        <li class="active">
+          <a href="">{{count}}</a>
+        </li>
+      {% else %}
+        <li>
+          <a href="/blog/{{count}}">{{count}}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+    {% if paginator.next_page %}
+      <li>
+        <a href="/blog/{{paginator.next_page}}">&raquo;</a>
+      </li>
+    {% else %}
+      <li class="disabled">
+        <a href="">&raquo;</a>
+      </li>
+    {% endif %}
+  </ul>
+</nav>

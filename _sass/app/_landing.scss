@@ -6,7 +6,7 @@
   padding: 100px 0;
   text-align: center;
   color: $grayscale-light;
-  background: $grayscale-dark url(../img/intro-bg.jpg) no-repeat scroll top left;
+  background: $grayscale-dark url('../img/intro-bg.jpg') no-repeat scroll top left;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -44,18 +44,22 @@
   }
 }
 
-@media(min-width:$screen-xs-max) {
-  .page {
-    min-height: 100%;
+.page {
+  min-height: 100%;
+}
+
+.content-section {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
 @media(min-width:$screen-xs-max) {
-
   .content-section {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    min-height:100%;
+    min-height: 100%;
   }
 }

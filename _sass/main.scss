@@ -8,22 +8,20 @@
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }
 
-/* Vendor imports */
+// Vendor imports
 @import "vendor/bootstrap";
 @import "vendor/font-awesome";
 @import "vendor/hover";
 
-/* App imports */
+// App imports
 @import "app/variables";
 @import "app/greyscale";
-@import "app/menu";
+@import "app/navbar";
 @import "app/landing";
-
-.kalam{
-    font-family: 'Kalam', cursive;
-}
+@import "app/syntax";
+@import "app/theme";
