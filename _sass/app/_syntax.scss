@@ -1,4 +1,4 @@
-// scss-lint:disable NameFormat, SelectorFormat
+// scss-lint:disable SelectorFormat
 @mixin rounded($radius:4px) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
@@ -41,14 +41,14 @@
   }
 
   ::selection {
-    background-color: $selectionBackground;
-    color: $selectionForeground;
+    background-color: $selection-background;
+    color: $selection-foreground;
   }
 
   > pre {
-    -webkit-box-shadow: inset 0 1px 10px $_black_3, 0 1px 0 $_white_1, 0 -1px 0 $_black_5;
-    -moz-box-shadow: inset 0 1px 10px $_black_3, 0 1px 0 $_white_1, 0 -1px 0 $_black_5;
-    box-shadow: inset 0 1px 10px $_black_3, 0 1px 0 $_white_1, 0 -1px 0 $_black_5;
+    -webkit-box-shadow: inset 0 1px 10px $black-3, 0 1px 0 $white-1, 0 -1px 0 $black-5;
+    -moz-box-shadow: inset 0 1px 10px $black-3, 0 1px 0 $white-1, 0 -1px 0 $black-5;
+    box-shadow: inset 0 1px 10px $black-3, 0 1px 0 $white-1, 0 -1px 0 $black-5;
   }
 }
 
@@ -65,9 +65,9 @@ p > code,
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: inset 0 1px 10px $_black_3, 0 1px 0 $_white_1, 0 -1px 0 $_black_5;
-  -moz-box-shadow: inset 0 1px 10px $_black_3, 0 1px 0 $_white_1, 0 -1px 0 $_black_5;
-  box-shadow: inset 0 1px 10px $_black_3, 0 1px 0 $_white_1, 0 -1px 0 $_black_5;
+  -webkit-box-shadow: inset 0 1px 10px $black-3, 0 1px 0 $white-1, 0 -1px 0 $black-5;
+  -moz-box-shadow: inset 0 1px 10px $black-3, 0 1px 0 $white-1, 0 -1px 0 $black-5;
+  box-shadow: inset 0 1px 10px $black-3, 0 1px 0 $white-1, 0 -1px 0 $black-5;
 }
 
 
@@ -78,9 +78,9 @@ p > code,
 .err { color: $error; background-color: $error-bg; } // Error
 .k { color: $keywords; } // Keyword
 .l { color: $numbers;} // Literal
-.n { color: $varAndProp; } // Name
+.n { color: $var-and-prop; } // Name
 .o { color: $operators; } // Operator
-.p { color: $varAndProp; } // Punctuation
+.p { color: $var-and-prop; } // Punctuation
 .cm { color: $comments; } // Comment.Multiline
 .cp { color: $comments; } // Comment.Preproc
 .c1 { color: $comments; } // Comment.Single
@@ -97,21 +97,21 @@ p > code,
 .m { color: $numbers;} // Literal.Number
 .s { color: $strings; } // Literal.String
 .na { color: $attributes; } // Name.Attribute
-.nb { color: $varAndProp; } // Name.Builtin
+.nb { color: $var-and-prop; } // Name.Builtin
 .nc { color: $names; } // Name.Class
 .no { color: $keywords; } // Name.Constant
 .nd { color: $tag; } // Name.Decorator
-.ni { color: $varAndProp; } // Name.Entity
+.ni { color: $var-and-prop; } // Name.Entity
 .ne { color: $names; } // Name.Exception
 .nf { color: $names; } // Name.Function
-.nl { color: $varAndProp; } // Name.Label
-.nn { color: $varAndProp; } // Name.Namespace
+.nl { color: $var-and-prop; } // Name.Label
+.nn { color: $var-and-prop; } // Name.Namespace
 .nx { color: $names; } // Name.Other
-.py { color: $varAndProp; } // Name.Property
+.py { color: $var-and-prop; } // Name.Property
 .nt { color: $tag; } // Name.Tag
-.nv { color: $varAndProp; } // Name.Variable
+.nv { color: $var-and-prop; } // Name.Variable
 .ow { color: $operators; } // Operator.Word
-.w { color: $varAndProp;  } // Text.Whitespace
+.w { color: $var-and-prop;  } // Text.Whitespace
 .mf { color: $numbers; } // Literal.Number.Float
 .mh { color: $numbers; } // Literal.Number.Hex
 .mi { color: $numbers; } // Literal.Number.Integer
@@ -127,10 +127,10 @@ p > code,
 .sr { color: $strings; } // Literal.String.Regex
 .s1 { color: $strings; } // Literal.String.Single
 .ss { color: $strings; } // Literal.String.Symbol
-.bp { color: $varAndProp;  } // Name.Builtin.Pseudo
-.vc { color: $varAndProp; } // Name.Variable.Class
-.vg { color: $varAndProp; } // Name.Variable.Global
-.vi { color: $varAndProp; } // Name.Variable.Instance
+.bp { color: $var-and-prop;  } // Name.Builtin.Pseudo
+.vc { color: $var-and-prop; } // Name.Variable.Class
+.vg { color: $var-and-prop; } // Name.Variable.Global
+.vi { color: $var-and-prop; } // Name.Variable.Instance
 .il { color: $numbers; } // Literal.Number.Integer.Long
 //.gh { } // Generic Heading & Diff Header
 .gu { color: $comments; } // Generic.Subheading & Diff Unified/Comment?
