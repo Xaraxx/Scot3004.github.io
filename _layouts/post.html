@@ -18,23 +18,29 @@ layout: blog
         </span>
       </span>
       {% endif %}
-    </p>
-    <ul class="list-inline">
-      {% for tag in page.tags %}
-        <li>
-          <a class="btn btn-default btn-xs" href="{{ site.url | append:site.baseurl }}/tag/{{ tag }}">
-            {{ tag }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+    </p>    
   </header>
   <div class="post-content" itemprop="articleBody">
     {{ content }}
-    {% if page.blogger_orig_url %}
-      <p class="migrated_blogger">
-        Migrado desde <a href="{{page.blogger_orig_url}}">blogger</a>
-      </p>
-    {% endif %}
   </div>
+  <footer class="post-footer">
+    <div id="post-tags">
+        {% if page.tags.size == 0 %}
+          <span>Sin etiquetar</span>
+        {% else %}
+          <span>Etiquetado en:</span>
+          {% for tag in page.tags %}
+            <a class="btn btn-default btn-xs" href="{{ site.url | append:site.baseurl }}/tag/{{ tag }}">
+              {{ tag }}
+            </a>      
+          {% endfor %}
+        {% endif %}
+    </div>
+
+    {% if page.blogger_orig_url %}
+      <span class="migrated_blogger">
+        Migrado desde <a href="{{page.blogger_orig_url}}">blogger</a>
+      </span>
+    {% endif %}    
+  </footer>
 </article>
