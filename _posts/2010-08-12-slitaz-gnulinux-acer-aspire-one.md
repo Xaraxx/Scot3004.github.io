@@ -1,7 +1,5 @@
 ---
 layout: post
-title: Slitaz GNU/Linux Acer Aspire One
-date: '2010-08-12T12:39:00.001-05:00'
 author: Sergio C. Orozco Torres
 tags:
 modified_time: '2011-06-05T18:30:45.973-05:00'

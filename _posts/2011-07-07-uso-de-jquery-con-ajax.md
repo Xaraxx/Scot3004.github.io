@@ -1,13 +1,11 @@
 ---
 layout: post
 title: Uso de jquery con ajax
-date: '2011-07-07T20:56:00.006-05:00'
 author: Sergio C. Orozco Torres
 tags:
 - tutorial
 - jquery
 - html
-modified_time: '2011-07-25T17:58:51.044-05:00'
 blogger_id: tag:blogger.com,1999:blog-3290987933179858425.post-2111565777799621636
 blogger_orig_url: http://scot3004.blogspot.com/2011/07/uso-de-jquery-con-ajax.html
 ---
