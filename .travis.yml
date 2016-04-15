@@ -13,11 +13,10 @@ install:
   - bower install
 
 script:
- - date
  - gulp compile
  - jekyll build
  - scss-lint ./_sass
- - htmlproofer ./_site
+ - htmlproofer ./_site --disable-external
 
 env:
   global:
