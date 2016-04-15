@@ -115,7 +115,7 @@ linters:
     style: short # or 'long'
 
   HexNotation:
-    enabled: true
+    enabled: false
     style: lowercase # or 'uppercase'
 
   HexValidation:
@@ -169,7 +169,7 @@ linters:
     max_properties: 10
 
   PropertySortOrder:
-    enabled: true
+    enabled: false
     ignore_unspecified: false
     min_properties: 2
     separate_groups: false
@@ -252,7 +252,7 @@ linters:
     spaces: 0
 
   StringQuotes:
-    enabled: true
+    enabled: false
     style: single_quotes # or double_quotes
 
   TrailingSemicolon:
@@ -284,7 +284,7 @@ linters:
     properties: []
 
   VendorPrefix:
-    enabled: true
+    enabled: false
     identifier_list: base
     additional_identifiers: []
     excluded_identifiers: []
