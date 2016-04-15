@@ -25,12 +25,20 @@ Desarrollar un sitio web informativo que demuestre los conocimientos y habilidad
 * [Bower](http://bower.io/)
 * [GULP](http://gulpjs.com/)
 * [JSHint](http://jshint.com/)
-* [Lektor](https://www.getlektor.com/)
 * [Sass](http://sass-lang.com/)
 * [Start Bootstrap](http://startbootstrap.com/)
 * [Start bootstrap grayscale](http://startbootstrap.com/template-overviews/grayscale/)
-* [Start bootstrap Stylish Portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/)
 
 
 ## Copyright and Licenses
 Copyright 2016 Scot3004. Code released under the [AGPL v3](LICENSE)
+
+## Instalación
+npm install
+npm install -g bower
+bower install
+
+gem install bundler
+bundle install
+
+gulp
