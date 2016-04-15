@@ -109,3 +109,23 @@ gulp.task('serve', function () {
     server.use(express.static(EXPRESS_ROOT));
     server.listen(EXPRESS_PORT);
 });
+
+// Builds the static website with Jekyll
+gulp.task('jekyll', ['compile'], function(done) {
+    execute('jekyll build --future --destination '
+        + path.join('..', websiteOutputDirectory), {
+        cwd: websiteInputDirectory
+    }, done);
+});
+
+function execute (cmd, opts, done) {
+    util.log(util.colors.cyan(cmd));
+    exec(cmd, opts,
+        function (error, stdout, stderr) {
+            util.log(util.colors.cyan(stdout));
+            util.log(util.colors.red(stderr));
+            done(error);
+        }
+    );
+}
+
