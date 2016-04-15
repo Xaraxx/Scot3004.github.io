@@ -2,6 +2,9 @@ language: ruby
 rvm:
 - 2.1
 
+before_install:
+- export TZ=America/Bogota
+
 install:
   - gem install bundler
   - bundle install
@@ -10,6 +13,7 @@ install:
   - bower install
 
 script:
+ - date
  - gulp compile
  - jekyll build
  - scss-lint ./_sass
