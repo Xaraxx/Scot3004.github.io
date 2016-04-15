@@ -1,7 +1,5 @@
 ---
 engines:
-  csslint:
-    enabled: true
   duplication:
     enabled: true
     config:
@@ -21,6 +19,7 @@ ratings:
   - "**.css"
   - "**.js"
   - "**.py"
+  - "**.scss"
 exclude_paths:
   - "**/*.min.js"
   - "**/*.min.css"
