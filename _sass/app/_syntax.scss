@@ -28,6 +28,7 @@ $scrollbar: #34362e;
 $scrollbar-thumb: #555;
 $_black_3: rgba(0, 0, 0, .3);
 $_white_1: rgba(255, 255, 255, .1);
+$_black_5: rgba(0, 0, 0, .5);
 
 .highlight {
   @include rounded(4px);
@@ -70,9 +71,9 @@ $_white_1: rgba(255, 255, 255, .1);
   }
 
   > pre {
-    -webkit-box-shadow: inset 0 1px 10px $_black_3, 0 1px 0 $_white_1, 0 -1px 0 rgba(0, 0, 0, .5);
-    -moz-box-shadow: inset 0 1px 10px $_black_3, 0 1px 0 $_white_1, 0 -1px 0 rgba(0, 0, 0, .5);
-    box-shadow: inset 0 1px 10px $_black_3, 0 1px 0 $_white_1, 0 -1px 0 rgba(0, 0, 0, .5);
+    -webkit-box-shadow: inset 0 1px 10px $_black_3, 0 1px 0 $_white_1, 0 -1px 0 $_black_5;
+    -moz-box-shadow: inset 0 1px 10px $_black_3, 0 1px 0 $_white_1, 0 -1px 0 $_black_5;
+    box-shadow: inset 0 1px 10px $_black_3, 0 1px 0 $_white_1, 0 -1px 0 $_black_5;
   }
 }
 
@@ -89,9 +90,9 @@ p > code,
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: inset 0 1px 10px $_black_3, 0 1px 0 $_white_1, 0 -1px 0 rgba(0, 0, 0, .5);
-  -moz-box-shadow: inset 0 1px 10px $_black_3, 0 1px 0 $_white_1, 0 -1px 0 rgba(0, 0, 0, .5);
-  box-shadow: inset 0 1px 10px $_black_3, 0 1px 0 $_white_1, 0 -1px 0 rgba(0, 0, 0, .5);
+  -webkit-box-shadow: inset 0 1px 10px $_black_3, 0 1px 0 $_white_1, 0 -1px 0 $_black_5;
+  -moz-box-shadow: inset 0 1px 10px $_black_3, 0 1px 0 $_white_1, 0 -1px 0 $_black_5;
+  box-shadow: inset 0 1px 10px $_black_3, 0 1px 0 $_white_1, 0 -1px 0 $_black_5;
 }
 
 
