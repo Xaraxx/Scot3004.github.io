@@ -26,8 +26,17 @@
   }
 }
 
-.post-meta{
-    font-size: 0.8em;
+.post-meta {
     margin-bottom: 5px;
     border-bottom: 2px solid $white_08;
+}
+
+.post-content {
+    margin-bottom: 10px;
+}
+.post-footer {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+    padding-top: 3px;
+    border-top: 2px solid $white_08;
 }
