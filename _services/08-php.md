@@ -1,6 +1,6 @@
 ---
-title: C#
+title: PHP
 image_path: "/img/logo.png"
 ---
 
-Diseño de sitios responsive usando html5
+Lenguaje mas usado para cosas sencillas
