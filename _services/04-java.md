@@ -1,6 +1,6 @@
 ---
 title: Java
-image_path: "/img/logo.png"
+devicon: "java"
 ---
 
 Primer lenguaje multiplataforma

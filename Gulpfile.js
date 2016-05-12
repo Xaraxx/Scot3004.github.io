@@ -36,7 +36,8 @@ var paths = {
     images: ['resources/img/**'],
     fonts: [
         'bower_components/bootstrap/fonts/*',
-        'bower_components/font-awesome/fonts/*'
+        'bower_components/font-awesome/fonts/*',
+        'bower_components/devicons/fonts/*'
     ],
 
     /* Output paths */

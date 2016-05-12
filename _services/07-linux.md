@@ -1,6 +1,6 @@
 ---
 title: Linux
-image_path: "/img/logo.png"
+devicon: "linux"
 ---
 
 Sistema operativo para toda ocasión

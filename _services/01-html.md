@@ -1,6 +1,6 @@
 ---
 title: HTML5
-image_path: "/img/logo.png"
+devicon: "html5"
 ---
 
 Lenguaje de marcas mas usado en la web

@@ -1,6 +1,6 @@
 ---
 title: PHP
-image_path: "/img/logo.png"
+devicon: "php"
 ---
 
 Lenguaje mas usado para cosas sencillas

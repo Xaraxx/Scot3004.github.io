@@ -1,6 +1,6 @@
 ---
 title: JavaScript
-image_path: "/img/logo.png"
+devicon: "javascript"
 ---
 
 Lenguaje de prototipo para web

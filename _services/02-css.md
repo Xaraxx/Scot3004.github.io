@@ -1,6 +1,6 @@
 ---
 title: CSS
-image_path: "/img/logo.png"
+devicon: "css3"
 ---
 
 Hojas de estilos en cascada

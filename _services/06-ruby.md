@@ -1,6 +1,6 @@
 ---
 title: Ruby
-image_path: "/img/logo.png"
+devicon: "ruby"
 ---
 
 Magia al desarrollar
