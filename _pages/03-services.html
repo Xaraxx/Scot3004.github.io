@@ -1,0 +1,18 @@
+---
+layout: null
+title: Services
+---
+
+  <div class="container">
+    <div class="row">
+      {% for service in site.services %}
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box">
+            <img src="{{ service.image_path }}" alt="{{ service.title }}"/>
+            <h3>{{ service.title }}</h3>
+            <div class="text-muted">{{ service.content }}</div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
