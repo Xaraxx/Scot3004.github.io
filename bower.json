@@ -20,6 +20,7 @@
     "Hover": "~2.0.2",
     "jquery": "~2.1.3",
     "bootswatch": "3.3.6+1",
-    "bootstrap-sass": "^3.3.6"
+    "bootstrap-sass": "^3.3.6",
+    "devicons": "^1.8.0"
   }
 }
