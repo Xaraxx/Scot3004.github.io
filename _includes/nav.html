@@ -1,40 +1,44 @@
 <!-- Navigation -->
 <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand page-scroll" href="/">
-                <span class="light">Scot</span>3004
-            </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-            <ul class="nav navbar-nav">
-                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                <li class="hidden">
-                    <a href="#page-top"></a>
-                </li>
-                <li>
-                    <a class="hvr-underline-from-center" href="/">Quien soy</a>
-                </li>
-                <li>
-                    <a class="hvr-underline-from-center" href="/#contact">Contacto</a>
-                </li>
-                <li>
-                  <a class="hvr-underline-from-center" href="/blog">Blog<span class="badge pull-right visible-xs-inline-block">{{site.posts.size}}</span></a>
-                </li>
-                <li>
-                  <a class="hvr-underline-from-center visible-xs-block" href="{{ site.baseurl }}/tags">
-                    Etiquetas
-                      <span class="badge pull-right">{{site.tags.size}}</span>
-                  </a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+        <i class="fa fa-bars"></i>
+      </button>
+      <a class="navbar-brand page-scroll" href="/">
+        <span class="light">Scot</span>3004
+      </a>
     </div>
-    <!-- /.container -->
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+      <ul class="nav navbar-nav">
+        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+        <li class="hidden">
+          <a href="#page-top"></a>
+        </li>
+        <li>
+          <a class="hvr-underline-from-center" href="{{site.baseurl}}/">Quien soy</a>
+        </li>
+        <li>
+          <a class="hvr-underline-from-center" href="{{site.baseurl}}/#contact">Contacto</a>
+        </li>
+        <li>
+          <a class="hvr-underline-from-center" href="{{site.baseurl}}/blog">
+            Blog
+            <span class="badge pull-right visible-xs-inline-block">
+              {{site.posts.size}}
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="hvr-underline-from-center visible-xs-block" href="{{ site.baseurl }}/tags">
+            Etiquetas
+            <span class="badge pull-right">{{site.tags.size}}</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
 </nav>
