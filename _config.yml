@@ -50,6 +50,12 @@ defaults:
     values:
       layout: "default"
       comments: true
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      navbar_classes: "navbar navbar-custom navbar-fixed-top top-nav-collapse"
+      navbar_base: "/"
 
 tag_title_prefix: ''
 tag_title_suffix: ' - posts etiquetados'

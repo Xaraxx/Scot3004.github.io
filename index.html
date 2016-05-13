@@ -1,34 +1,10 @@
 ---
 layout: default
+navbar_classes: "navbar navbar-fixed-top navbar-custom navbar-main"
+navbar_base: ""
 ---
-<nav class="navbar navbar-custom navbar-fixed-top navbar-main ">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand page-scroll" href="#page-top">
-                <span class="light">Scot</span>3004
-            </a>
-        </div>
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-            <ul class="nav navbar-nav">
-                <li class="hidden">
-                    <a href="#page-top"></a>
-                </li>
-                <li>
-                    <a class="hvr-underline-from-center" href="#about">Quien soy</a>
-                </li>
-                <li>
-                    <a class="hvr-underline-from-center" href="#contact">Contacto</a>
-                </li>
-                <li>
-                    <a class="hvr-underline-from-center" href="/blog">Blog</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+
+{% include nav.html %}
 
 {% for pag in site.landing %}
   {{ pag.content }}

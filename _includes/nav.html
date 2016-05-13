@@ -1,11 +1,11 @@
 <!-- Navigation -->
-<nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse">
+<nav class="{{page.navbar_classes}}">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
         <i class="fa fa-bars"></i>
       </button>
-      <a class="navbar-brand page-scroll" href="/">
+      <a class="navbar-brand page-scroll hvr-underline-from-center" href="{{page.navbar_base}}">
         <span class="light">Scot</span>3004
       </a>
     </div>
@@ -17,13 +17,16 @@
           <a href="#page-top"></a>
         </li>
         <li>
-          <a class="hvr-underline-from-center" href="{{site.baseurl}}/">Quien soy</a>
+          <a class="hvr-underline-from-center" href="{{page.navbar_base}}#about">Quien soy</a>
         </li>
         <li>
-          <a class="hvr-underline-from-center" href="{{site.baseurl}}/#contact">Contacto</a>
+          <a class="hvr-underline-from-center" href="{{page.navbar_base}}#conocimientos">Conocimientos</a>
         </li>
         <li>
-          <a class="hvr-underline-from-center" href="{{site.baseurl}}/blog">
+          <a class="hvr-underline-from-center" href="{{page.navbar_base}}#contact">Contacto</a>
+        </li>
+        <li>
+          <a class="hvr-underline-from-center" href="/blog">
             Blog
             <span class="badge pull-right visible-xs-inline-block">
               {{site.posts.size}}
