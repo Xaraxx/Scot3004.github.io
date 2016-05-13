@@ -24,7 +24,13 @@
                     <a class="hvr-underline-from-center" href="/#contact">Contacto</a>
                 </li>
                 <li>
-                  <a class="hvr-underline-from-center" href="/blog">Blog</a>
+                  <a class="hvr-underline-from-center" href="/blog">Blog<span class="badge pull-right visible-xs-inline-block">{{site.posts.size}}</span></a>
+                </li>
+                <li>
+                  <a class="hvr-underline-from-center visible-xs-block" href="{{ site.baseurl }}/tags">
+                    Etiquetas
+                      <span class="badge pull-right">{{site.tags.size}}</span>
+                  </a>
                 </li>
             </ul>
         </div>

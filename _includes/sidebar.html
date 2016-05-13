@@ -1,10 +1,14 @@
 <div class="sidebar">
   <div class="panel panel-default">
     <div class="sidebar-heading panel-heading">
-      <h2>Posts recientes</h2>
+      <a href="{{ '/archive.html' | prepend: site.baseurl }}">
+        <h2>Posts recientes
+          <span class="badge pull-right">{{site.posts.size}}</span>
+        </h2>
+      </a>
     </div>
     <div class="list-group">
-      {% for post in site.posts limit:5 %}
+      {% for post in site.posts limit:3 %}
       <a class="list-group-item" href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a>
       {% endfor %}
     </div>
@@ -12,15 +16,17 @@
 
   <div class="panel panel-default">
     <div class="sidebar-heading panel-heading">
-      <h2>Etiquetas</h2>
+      <a href="{{ site.baseurl }}/tags">
+        <h2>Etiquetas
+          <span class="badge pull-right">{{site.tags.size}}</span></h2>
+      </a>
+
     </div>
     <div class="list-group">
-      {% for tag in site.tags %}
+      {% for tag in site.tags limit:3 %}
       <a class="list-group-item" href="{{ site.baseurl }}/tag/{{ tag[0] }}">{{ tag[0] }}</a>
       {% endfor %}
-      <a class="list-group-item" href="{{ '/archive.html' | prepend: site.baseurl }}">Archivo del blog
-        <span class="badge">{{site.posts.size}}</span>
-      </a>
     </div>
   </div>
+  {% include twitter.html %}
 </div>
