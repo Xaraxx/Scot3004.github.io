@@ -58,4 +58,4 @@ timezone: '-0500'
 
 collections:
   - services
-  - pages
+  - landing
