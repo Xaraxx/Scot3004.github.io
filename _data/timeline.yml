@@ -1,0 +1,7 @@
+
+- image: "/img/timeline/spidertocat.png"
+  date: "Abril 1991"
+  description: "Mi nacimiento"
+- image: "/img/timeline/baracktocat.jpg"
+  date: "Diciembre 2007"
+  description: "Bachiller"

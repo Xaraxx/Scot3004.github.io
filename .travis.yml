@@ -2,10 +2,12 @@ language: ruby
 rvm:
 - 2.1
 node_js:
-  - '4'
+- '4'
 
 before_install:
 - export TZ=America/Bogota
+- node --version
+- nvm --version
 
 install:
   - gem install bundler
@@ -15,8 +17,7 @@ install:
   - bower install
 
 script:
- - node --version
- - gulp compile --harmony
+# - gulp compile --harmony
  - jekyll build
  - scss-lint ./_sass
  - htmlproofer ./_site --disable-external

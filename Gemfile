@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
-gem "rake"
+gem "rake", require: false
 gem "jekyll"
 gem "jekyll-paginate"
-gem "scss-lint"
-gem "html-proofer"
+gem 'scss_lint', require: false
+gem "html-proofer", require: false
