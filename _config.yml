@@ -6,9 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Scot3004
+title: Scot3004 web
 email: scot3004@gmail.com
-description:  Sitio de presentación Sergio Orozco Torres - Desarrollador web
+description: Sitio de presentación de Sergio Carlos Orozco Torres - Desarrollador web
 nombre: Sergio C. Orozco Torres
 lema: Renovarse refleja la adaptación al cambio
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -39,7 +39,6 @@ exclude:
   - "package.json"
 
 gems:
-  - jekyll-sitemap
   - jekyll-paginate
 
 defaults:
