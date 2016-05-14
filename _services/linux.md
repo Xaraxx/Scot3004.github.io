@@ -1,6 +1,5 @@
 ---
 title: Linux
 devicon: "linux"
+resume: Libertad y funcionamiento
 ---
-
-Sistema operativo para toda ocasión

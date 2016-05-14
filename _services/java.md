@@ -1,6 +1,5 @@
 ---
 title: Java
 devicon: "java"
+resume: Integridad y consistencia
 ---
-
-Primer lenguaje multiplataforma

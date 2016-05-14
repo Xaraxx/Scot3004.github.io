@@ -1,6 +1,5 @@
 ---
 title: JavaScript
 devicon: "javascript"
+resume: Interacción al cliente
 ---
-
-Lenguaje de prototipo para web
