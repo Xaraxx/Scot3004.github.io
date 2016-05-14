@@ -16,7 +16,7 @@ install:
   - bower install
 
 script:
- - gulp compile
+ - gulp compile --harmony
  - jekyll build
  - scss-lint ./_sass
  - htmlproofer ./_site --disable-external
