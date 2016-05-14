@@ -67,3 +67,5 @@ timezone: '-0500'
 collections:
   - services
   - landing
+
+split: "<a name='more'></a><br />"
