@@ -1,9 +1,9 @@
 # Scot3004
 
-[![Build Status](https://travis-ci.org/Scot3004/Scot3004.svg)](https://travis-ci.org/Scot3004/Scot3004)
-[![devDependency Status](https://david-dm.org/Scot3004/Scot3004/dev-status.svg)](https://david-dm.org/Scot3004/Scot3004#info=devDependencies)
-[![Code Climate](https://codeclimate.com/github/Scot3004/Scot3004/badges/gpa.svg)](https://codeclimate.com/github/Scot3004/Scot3004)
-[![Issue Count](https://codeclimate.com/github/Scot3004/Scot3004/badges/issue_count.svg)](https://codeclimate.com/github/Scot3004/Scot3004)
+[![Build Status](https://travis-ci.org/Scot3004/Scot3004.github.io.svg)](https://travis-ci.org/Scot3004/Scot3004.github.io)
+[![devDependency Status](https://david-dm.org/Scot3004/Scot3004.github.io/dev-status.svg)](https://david-dm.org/Scot3004/Scot3004.github.io#info=devDependencies)
+[![Code Climate](https://codeclimate.com/github/Scot3004/Scot3004.github.io/badges/gpa.svg)](https://codeclimate.com/github/Scot3004/Scot3004.github.io)
+[![Issue Count](https://codeclimate.com/github/Scot3004/Scot3004.github.io/badges/issue_count.svg)](https://codeclimate.com/github/Scot3004/Scot3004.github.io)
 
 Página personal de presentación de Sergio C. Orozco Torres
 
