@@ -11,7 +11,7 @@ Página personal de presentación de Sergio C. Orozco Torres
 Practicar el desarrollo front-end para fortalecer habilidades y tener una plantilla base en caso que requiera iniciar otro desarrollo similar
 
 
-##Objetivos
+## Objetivos
 
 ### Objetivo General
 Desarrollar un sitio web informativo que demuestre los conocimientos y habilidades en desarrollo web de Sergio Orozco Torres
