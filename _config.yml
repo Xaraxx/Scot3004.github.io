@@ -8,13 +8,16 @@
 # Site settings
 title: Scot3004 web
 email: scot3004@gmail.com
+lang: es
 description: Sitio de presentación de Sergio Carlos Orozco Torres - Desarrollador web
+subject: Presentación de Sergio Orozco Torres como desarrolador web
 nombre: Sergio C. Orozco Torres
 lema: Renovarse refleja la adaptación al cambio
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.scot3004.xyz" # the base hostname & protocol for your site
 twitter_username: scot3004
 github_username: scot3004
+license: AGPL-3.0
 
 disqus: scot3004
 comments: true
