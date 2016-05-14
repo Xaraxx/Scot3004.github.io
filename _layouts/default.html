@@ -2,6 +2,7 @@
 <html lang="{{site.lang}}">
   {% include head.html %}
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    {% include nav.html %}
     {{ content }}
     <script src="{{'/js/main.min.js'| prepend: site.baseurl }}"></script>
   </body>
