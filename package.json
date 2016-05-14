@@ -15,7 +15,7 @@
     "gulp-clean-css": "^2.0.3",
     "gulp-concat": "^2.5.2",
     "gulp-csslint": "^0.3.0",
-    "gulp-imagemin": "^2.2.1",
+    "gulp-imagemin": "^3.0.1",
     "gulp-jshint": "^2.0.0",
     "gulp-newer": "^1.1.0",
     "gulp-notify": "^2.2.0",
@@ -27,7 +27,7 @@
   "scripts": {
     "test": "htmlproofer ./_site",
     "run": "gulp serve",
-    "build": "jekyll build" ,
+    "build": "jekyll build",
     "start": "jekyll serve -w",
     "dev": "gulp"
   },
