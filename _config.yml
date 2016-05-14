@@ -69,3 +69,5 @@ collections:
   - landing
 
 split: "<a name='more'></a><br />"
+
+timeline-img: "/img/timeline/default.png"
