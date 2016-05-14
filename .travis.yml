@@ -8,6 +8,7 @@ before_install:
 - export TZ=America/Bogota
 - node --version
 - nvm --version
+
 install:
   - gem install bundler
   - bundle install
@@ -16,7 +17,7 @@ install:
   - bower install
 
 script:
- - gulp compile --harmony
+# - gulp compile --harmony
  - jekyll build
  - scss-lint ./_sass
  - htmlproofer ./_site --disable-external
