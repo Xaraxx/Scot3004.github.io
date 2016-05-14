@@ -8,6 +8,7 @@ modified_time: '2011-06-05T17:02:31.997-05:00'
 thumbnail: http://1.bp.blogspot.com/-Uh4mEjsnmZc/TecrJnVbChI/AAAAAAAAAKQ/jh5bqLy2zkM/s72-c/instant%25C3%25A1nea1.png
 blogger_id: tag:blogger.com,1999:blog-3290987933179858425.post-5648991122599032996
 blogger_orig_url: http://scot3004.blogspot.com/2011/06/sqlite-netbeans.html
+category: dev
 ---
 
 Como podemos darnos cuenta para tener una aplicacion robusta necesitamos un motor de bases de datos,
@@ -41,4 +42,4 @@ hecho en GNU/Linux<
 ![Creación de tabla](http://1.bp.blogspot.com/-Uh4mEjsnmZc/TecrJnVbChI/AAAAAAAAAKQ/jh5bqLy2zkM/s1600/instant%25C3%25A1nea1.png)
 ![Conexión con la base de datos](http://3.bp.blogspot.com/-ZPMDat83nvQ/TecrLV8YRxI/AAAAAAAAAKU/LY9L4uVOOlQ/s1600/instant%25C3%25A1nea2.png)
 ![NetBeans creando](http://4.bp.blogspot.com/-qxXGsXJujfg/TecrMatevpI/AAAAAAAAAKY/1XTnmPcWNK8/s1600/instant%25C3%25A1nea3.png)
-![Consulta de registros]( http://3.bp.blogspot.com/-sSOke2IJHco/TecrOLZnoHI/AAAAAAAAAKg/Udnsf2A9_o0/s1600/instant%25C3%25A1nea5.png) 
+![Consulta de registros]( http://3.bp.blogspot.com/-sSOke2IJHco/TecrOLZnoHI/AAAAAAAAAKg/Udnsf2A9_o0/s1600/instant%25C3%25A1nea5.png)

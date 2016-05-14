@@ -2,7 +2,7 @@
 layout: post
 title:  "Desarrollo web"
 date:   2016-03-21 9:09:10 -0500
-categories: desarrollo presentacion
+category: dev
 author: scot3004
 twitter_handle: scot3004
 ---

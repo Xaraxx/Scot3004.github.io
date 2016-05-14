@@ -5,6 +5,7 @@ tags:
 modified_time: '2011-06-05T18:30:45.973-05:00'
 blogger_id: tag:blogger.com,1999:blog-3290987933179858425.post-4881658907635129104
 blogger_orig_url: http://scot3004.blogspot.com/2010/08/slitaz-gnulinux-acer-aspire-one.html
+category: linux
 ---
 
 ## Intro De Slitaz
@@ -15,7 +16,7 @@ editores de texto, cliente/servidor SSH, SQLite, PHP, un wiki preinstalado,
 editor de audio, numerosas utilidades de sistema, soporte para disco duro,
 red, usb, tarjeta de sonido, y mucho más.
 
-<!--more-->
+{{ site.split }}
 
 El gestor de paquetes de esta minidistro es tazpkg,
 este se encuentra disponible tanto en versión shell o

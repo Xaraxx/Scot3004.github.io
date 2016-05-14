@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Instalación disqus"
-categories: desarrollo
+category: dev
 tags:
 - tutorial
 - html

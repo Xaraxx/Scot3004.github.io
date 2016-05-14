@@ -8,6 +8,7 @@ tags:
 - html
 blogger_id: tag:blogger.com,1999:blog-3290987933179858425.post-2111565777799621636
 blogger_orig_url: http://scot3004.blogspot.com/2011/07/uso-de-jquery-con-ajax.html
+category: dev
 ---
 
 ~~Recientemente ando~~ experimentando con ajax, usando como framework jquery, implementando elementos css3 y entre todo ese sancocho he encontrado lo siguiente:<br />
