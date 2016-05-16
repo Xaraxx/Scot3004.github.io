@@ -21,6 +21,5 @@ ratings:
   - "**.py"
   - "**.scss"
 exclude_paths:
-  - "js/analytics.js"
   - "**/*.min.js"
   - "**/*.min.css"
