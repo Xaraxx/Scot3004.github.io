@@ -71,3 +71,8 @@ collections:
 split: "<a name='more'></a><br />"
 
 timeline-img: "/img/timeline/default.png"
+
+google_analytics:
+  enable: true
+  id: "UA-10920504-3"       ## e.g. UA-46321946-2 your google analytics ID.
+  site: "auto"
