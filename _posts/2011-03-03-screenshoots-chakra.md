@@ -7,6 +7,18 @@ thumbnail: https://lh3.googleusercontent.com/-o5H766pfSi8/TXBjmjrondI/AAAAAAAAAI
 blogger_id: tag:blogger.com,1999:blog-3290987933179858425.post-5426752598872988161
 blogger_orig_url: http://scot3004.blogspot.com/2011/03/screenshoots-de-mi-chakra-bueno-en.html
 category: linux
+
+gallery:
+  - url: screenshoots/openbox.png
+    image_path: screenshoots/openbox.png
+    alt: "Openbox + Nitrogen + Kmixer + KNetworkManager + Conky + Krunner + Tint2"
+  - url: screenshoots/lxde.png
+    image_path: screenshoots/lxde.png
+    alt: "Lxde + Openbox + KnetworkManager + repos de arch"
+  - url: screenshoots/kde.png
+    image_path: screenshoots/kde.png
+    alt: "KDE"
+
 ---
 
 
@@ -17,10 +29,4 @@ Openbox
 LXDE
 escritorios de por si hermosos a continuacion las capturas de ellos
 
-Openbox + Nitrogen + Kmixer + KNetworkManager + Conky + Krunner + Tint2
-![OpenBox](https://lh3.googleusercontent.com/-o5H766pfSi8/TXBjmjrondI/AAAAAAAAAIQ/wjKl0Oem7Dk/s640/snapshot1.png)
-
-Lxde + Openbox + KnetworkManager + repos de arch
-![LXDE](https://lh4.googleusercontent.com/-uL1oqNEOYxs/TXBjpdEi8zI/AAAAAAAAAIU/b5E7Dcu2WRE/s1600/snapshot2.png)
-
-KDE: ![KDE](https://lh5.googleusercontent.com/-94y--79WnMw/TXBjxi92vGI/AAAAAAAAAIc/2AkoZkGD1T4/s640/snapshot3.png)
+{% include gallery caption="Capturas de pantalla" %}

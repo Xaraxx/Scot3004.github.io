@@ -31,7 +31,8 @@ var paths = {
     vendor_scripts: [
         'bower_components/jquery/dist/jquery.js',
         'bower_components/jquery.easing/js/jquery.easing.js',
-        'bower_components/bootstrap/dist/js/bootstrap.js'
+        'bower_components/bootstrap/dist/js/bootstrap.js',
+        'bower_components/magnific-popup/dist/jquery.magnific-popup.js'
     ],
     images: ['resources/img/**'],
     fonts: [
