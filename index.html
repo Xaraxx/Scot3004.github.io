@@ -3,7 +3,16 @@ layout: default
 navbar_classes: "navbar navbar-fixed-top navbar-custom navbar-main"
 navbar_base: ""
 ---
+{% include intro.html %}
 
 {% for pag in site.landing %}
-  {{ pag.content }}
+  <section class="content-section text-center" id="{{ pag.pid }}">
+    <h1>{{ pag.title }}</h1>
+  <div class="row">
+    
+    {{ pag.content }}
+  </div>
+</section>
 {% endfor %}
+
+      

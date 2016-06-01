@@ -1,21 +1,14 @@
 ---
-layout: null
-title: Conozco
+title: Lenguajes conocidos
+pid: conocimientos
 ---
 
-  <div class="content-section text-center" id="conocimientos">
-
-    <div class="row">
-      <h2 class="text-center">Lenguajes conocidos</h2>
-      <hr class="small"/>
-      {% for service in site.services %}
-        <div class="col-lg-3 col-md-4 col-sm-6 text-center">
-          <div class="service-box">
-            <i class="service-icon devicons devicons-{{service.devicon}}"></i>
-            <h3>{{ service.title }}</h3>
-            <div class="text-muted">{{ service.resume }}</div>
-          </div>
-        </div>
-      {% endfor %}
+{% for service in site.services %}
+  <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+    <div class="service-box">
+      <i class="service-icon devicons devicons-{{service.devicon}}"></i>
+      <h3>{{ service.title }}</h3>
+      <div class="text-muted">{{ service.resume }}</div>
     </div>
   </div>
+{% endfor %}
