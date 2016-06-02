@@ -3,7 +3,7 @@ title: Contribuciones
 pid: contribuciones
 nav_title: Contribuciones
 ---
-{% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse | where: "fork", "false" %}
+{% assign sorted_repos = (site.github.public_repositories) | reverse | where: "fork", "false" %}
 
 <div class="repo-list row">
     <!-- Check here for github metadata -->
