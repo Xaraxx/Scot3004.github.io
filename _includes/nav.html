@@ -16,15 +16,12 @@
         <li class="hidden">
           <a href="#page-top"></a>
         </li>
-        <li>
-          <a class="hvr-underline-from-center page-scroll" href="{{page.navbar_base}}#about">Quien soy</a>
+        
+        {% for pag in site.landing %}
+         <li>
+          <a class="hvr-underline-from-center page-scroll" href="{{page.navbar_base}}#{{pag.pid}}">{{ pag.nav_title }}</a>
         </li>
-        <li>
-          <a class="hvr-underline-from-center page-scroll" href="{{page.navbar_base}}#conocimientos">Conocimientos</a>
-        </li>
-        <li>
-          <a class="hvr-underline-from-center page-scroll" href="{{page.navbar_base}}#contact">Contacto</a>
-        </li>
+        {% endfor %}
         <li>
           <a class="hvr-underline-from-center" href="/blog">
             Blog

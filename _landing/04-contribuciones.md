@@ -1,7 +1,7 @@
 ---
 title: Contribuciones
-class: text-center
 pid: contribuciones
+nav_title: Contribuciones
 ---
 {% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse | where: "fork", "false" %}
 
