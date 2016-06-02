@@ -1,4 +1,7 @@
-$grayscale-primary: #00a1c8 !default;
+$primary-color: #00b1c6 !default;
+$grayscale-primary: $primary-color;
+$secundary-color: #b1c600;
+
 $grayscale-dark: #000 !default;
 $grayscale-light: #eee !default;
 $grayscale-max-light: #fff !default;
@@ -33,3 +36,4 @@ $scrollbar-thumb: #555;
 $black-3: rgba(0, 0, 0, .3);
 $white-1: rgba(255, 255, 255, .1);
 $black-5: rgba(0, 0, 0, .5);
+
