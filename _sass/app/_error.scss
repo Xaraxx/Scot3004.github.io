@@ -6,3 +6,16 @@
   background-size: cover;
   -o-background-size: cover;
 }
+
+.error-page-number {
+  font-size: 300px;
+  opacity: 1;
+  -webkit-text-stroke: 5px #00BCE4;
+  font-weight: 600;
+  color: white;
+  text-shadow:
+    -5px -5px 0 #00BCE4,  
+    5px -5px 0 #00BCE4,
+    -5px 5px 0 #00BCE4,
+    5px 5px 0 #00BCE4;
+}
