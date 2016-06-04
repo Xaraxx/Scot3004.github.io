@@ -8,14 +8,14 @@
 }
 
 .error-page-number {
-  font-size: 300px;
+  font-family: Sans-Serif;
+  font-size: 230px;
   opacity: 1;
-  -webkit-text-stroke: 5px #00BCE4;
+  -webkit-text-stroke: 5px $error-number-color-stroke;
   font-weight: 600;
-  color: white;
-  text-shadow:
-    -5px -5px 0 #00BCE4,  
-    5px -5px 0 #00BCE4,
-    -5px 5px 0 #00BCE4,
-    5px 5px 0 #00BCE4;
+  color: $error-number-color-fill;
+  text-shadow: -5px -5px 0 $error-number-color-stroke,
+    5px -5px 0 $error-number-color-stroke,
+    -5px 5px 0 $error-number-color-stroke,
+    5px 5px 0 $error-number-color-stroke;
 }
