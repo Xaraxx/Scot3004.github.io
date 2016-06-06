@@ -1,5 +1,4 @@
 ---
-layout: post
 title: SQLite NetBeans
 date: '2011-06-02T11:17:00.003-05:00'
 author: Sergio C. Orozco Torres

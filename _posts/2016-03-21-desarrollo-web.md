@@ -1,10 +1,8 @@
 ---
-layout: post
 title:  "Desarrollo web"
 date:   2016-03-21 9:09:10 -0500
 category: dev
-author: scot3004
-twitter_handle: scot3004
+author: Sergio C. Orozco Torres
 ---
 
 El desarrollo web presenta desafios para aquellos que escogen tan linda y demandada profesión

@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Instalación disqus"
 category: dev
 tags:

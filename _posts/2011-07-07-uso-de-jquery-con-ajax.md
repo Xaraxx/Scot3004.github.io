@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Uso de jquery con ajax
 author: Sergio C. Orozco Torres
 tags:
