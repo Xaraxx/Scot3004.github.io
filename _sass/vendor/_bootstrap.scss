@@ -1,5 +1,5 @@
 // Twitter bootstrap overrides and import
 $icon-font-path: '/fonts/';
-@import "../../bower_components/bootswatch/cyborg/variables";
-@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-@import "../../bower_components/bootswatch/cyborg/bootswatch";
+@import "../../node_modules/bootswatch/cyborg/variables";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../node_modules/bootswatch/cyborg/bootswatch";

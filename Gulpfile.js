@@ -14,11 +14,7 @@ var gulp = require('gulp'),
     del = require('del'),
     newer = require('gulp-newer'),
     csslint = require('gulp-csslint'),
-    express = require('express'),
     spawn = require('child_process').spawn;
-
-var EXPRESS_PORT = 4000;
-var EXPRESS_ROOT = '_site/'
 
 /* Set paths */
 
@@ -29,16 +25,16 @@ var paths = {
         'resources/js/**'
     ],
     vendor_scripts: [
-        'bower_components/jquery/dist/jquery.js',
-        'bower_components/jquery.easing/js/jquery.easing.js',
-        'bower_components/bootstrap/dist/js/bootstrap.js',
-        'bower_components/magnific-popup/dist/jquery.magnific-popup.js'
+        'node_modules/jquery/dist/jquery.js',
+        'node_modules/jquery.easing/js/jquery.easing.js',
+        'node_modules/bootstrap/dist/js/bootstrap.js',
+        'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
     ],
     images: ['resources/img/**'],
     fonts: [
-        'bower_components/bootstrap/fonts/*',
-        'bower_components/font-awesome/fonts/*',
-        'bower_components/devicons/fonts/*'
+        'node_modules/bootstrap/fonts/*',
+        'node_modules/font-awesome/fonts/*',
+        'node_modules/devicons/fonts/*'
     ],
 
     /* Output paths */
@@ -103,11 +99,4 @@ gulp.task('default',function() {
 
 gulp.task('compile', function() {
     gulp.start('css', 'js', 'img', 'fonts');
-});
-
-// Run static file server
-gulp.task('serve', function () {
-    var server = express();
-    server.use(express.static(EXPRESS_ROOT));
-    server.listen(EXPRESS_PORT);
 });
