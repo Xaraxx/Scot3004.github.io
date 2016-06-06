@@ -31,10 +31,14 @@
     "gulp-rename": "^1.2.0",
     "gulp-ruby-sass": "^2.0.6",
     "gulp-uglify": "^1.1.0",
-    "jshint": "^2.9.1"
+    "jshint": "^2.9.1",
+    "npm-run-all": "^2.1.1"
   },
   "scripts": {
-    "test": "htmlproofer ./_site",
+    "lint:js": "eslint . --ext .js",
+    "lint:css": "scss-lint ./_sass",
+    "lint:html": "htmlproofer ./_site --disable-external",
+    "test": "npm-run-all lint:css lint:js lint:html",
     "build": "jekyll build",
     "start": "jekyll serve -w",
     "dev": "gulp"
