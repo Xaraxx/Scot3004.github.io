@@ -5,7 +5,6 @@
 /* Get dependencies */
 var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
-    jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
     rename = require('gulp-rename'),
@@ -13,7 +12,6 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     del = require('del'),
     newer = require('gulp-newer'),
-    csslint = require('gulp-csslint'),
     spawn = require('child_process').spawn;
 
 /* Set paths */
@@ -51,13 +49,6 @@ gulp.task('css', function() {
         .pipe(gulp.dest(paths.stylesOutput));
 });
 
-gulp.task('csslint', function() {
-   sass(paths.styles,{ style: 'expanded' })
-    .pipe(csslint())
-    .pipe(csslint.reporter());
-});
-
-
 gulp.task('js', function() {
 
     return gulp.src(paths.vendor_scripts.concat(paths.scripts))
@@ -65,12 +56,6 @@ gulp.task('js', function() {
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
         .pipe(gulp.dest(paths.scriptsOutput));
-});
-
-gulp.task('jshint', function() {
-    return gulp.src(paths.scripts)
-        .pipe(jshint('.jshintrc'))
-        .pipe(jshint.reporter('default'));
 });
 
 gulp.task('img', function() {

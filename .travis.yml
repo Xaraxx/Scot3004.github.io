@@ -13,11 +13,11 @@ install:
   - gem install bundler
   - bundle install
   - npm install
+  - npm install -g eslint
 
 script:
  - jekyll build
- - scss-lint ./_sass
- - htmlproofer ./_site --disable-external
+ - npm run test
 
 env:
   global:
