@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Windows o Linux
 date: '2010-10-19T15:10:00.001-05:00'
 author: Sergio C. Orozco Torres

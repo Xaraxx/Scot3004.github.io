@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Sergio C. Orozco Torres
 tags:
 modified_time: '2011-06-05T18:30:45.973-05:00'

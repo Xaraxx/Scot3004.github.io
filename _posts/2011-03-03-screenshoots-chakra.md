@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Screenshoots de mi Chakra
 author: Sergio C. Orozco Torres
 tags:
