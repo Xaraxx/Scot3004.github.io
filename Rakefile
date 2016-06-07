@@ -1,28 +1,12 @@
 require "rubygems"
+require 'html-proofer'
 
 desc "Deploy to Github Pages"
 task :deploy do
-  puts "## Deploying to Github Pages"
-
-  puts "## Generating site"
-  system "gulp compile"
-
-  cd "_site" do
-    system "git add -A"
-
-    message = "Site updated at #{Time.now.utc}"
-    puts "## Commiting: #{message}"
-    system "git commit -m \"#{message}\""
-
-    puts "## Pushing generated site"
-    system "git push"
-
-    puts "## Deploy Complete!"
-  end
+  ruby 'scripts/deploy.rb'
 end
 
-require 'html-proofer'
-
+desc "Test the generated html"
 task :test do
   sh "bundle exec jekyll build"
   HTMLProofer.check_directory("./_site").run

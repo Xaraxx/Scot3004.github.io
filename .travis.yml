@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - 2.1
 node_js:
-- '4'
+- '6'
 
 before_install:
 - export TZ=America/Bogota
@@ -13,14 +13,11 @@ install:
   - gem install bundler
   - bundle install
   - npm install
-  - npm install -g bower gulp
-  - bower install
+  - npm install -g eslint
 
 script:
-# - gulp compile --harmony
  - jekyll build
- - scss-lint ./_sass
- - htmlproofer ./_site --disable-external
+ - npm run test
 
 env:
   global:

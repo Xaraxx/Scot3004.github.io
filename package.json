@@ -1,32 +1,39 @@
 {
-  "name": "Scot3004",
-  "version": "1.0.0",
+  "name": "scot3004",
+  "version": "1.1.0",
   "description": "Página web de presentación de Sergio C. Orozco Torres",
   "main": "Gulpfile.js",
   "dependencies": {
-    "express": "^4.13.4"
+    "bootstrap": "^3.3.6",
+    "bootstrap-sass": "^3.3.6",
+    "bootswatch": "^3.3.6",
+    "devicons": "^1.8.0",
+    "font-awesome": "^4.6.3",
+    "hover.css": "^2.0.2",
+    "jquery": "^2.2.4",
+    "jquery-smooth-scroll": "^1.7.2",
+    "jquery.easing": "^1.3.2",
+    "magnific-popup": "^1.1.0"
   },
   "devDependencies": {
-    "connect": "^3.3.4",
-    "connect-livereload": "^0.5.3",
-    "csslint": "^0.10.0",
     "del": "^2.2.0",
+    "fontify": "0.0.2",
     "gulp": "^3.8.11",
     "gulp-clean-css": "^2.0.3",
     "gulp-concat": "^2.5.2",
-    "gulp-csslint": "^0.3.0",
     "gulp-imagemin": "^3.0.1",
-    "gulp-jshint": "^2.0.0",
     "gulp-newer": "^1.1.0",
     "gulp-notify": "^2.2.0",
     "gulp-rename": "^1.2.0",
     "gulp-ruby-sass": "^2.0.6",
     "gulp-uglify": "^1.1.0",
-    "jshint": "^2.9.1"
+    "npm-run-all": "^2.1.1"
   },
   "scripts": {
-    "test": "htmlproofer ./_site",
-    "run": "gulp serve",
+    "lint:js": "eslint . --ext .js",
+    "lint:css": "scss-lint ./_sass",
+    "lint:html": "htmlproofer ./_site --disable-external",
+    "test": "npm-run-all lint:css lint:js lint:html",
     "build": "jekyll build",
     "start": "jekyll serve -w",
     "dev": "gulp"
@@ -44,5 +51,6 @@
   "bugs": {
     "url": "https://github.com/Scot3004/Scot3004/issues"
   },
-  "homepage": "https://Scot3004.github.io"
+  "homepage": "https://Scot3004.github.io",
+  "optionalDependencies": {}
 }

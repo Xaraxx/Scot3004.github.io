@@ -43,7 +43,6 @@ exclude:
 
 gems:
   - jekyll-paginate
-  - jekyll-geo-pattern
   - jekyll-github-metadata
 
 defaults:
