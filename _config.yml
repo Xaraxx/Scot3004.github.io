@@ -9,6 +9,7 @@
 title: Scot3004 web
 email: scot3004@gmail.com
 lang: es
+locale: es
 description: Sitio de presentación de Sergio Carlos Orozco Torres - Desarrollador web
 subject: Presentación de Sergio Orozco Torres como desarrolador web
 nombre: Sergio C. Orozco Torres
@@ -53,6 +54,8 @@ defaults:
     values:
       layout: "post"
       comments: true
+      author_profile: true
+      read_time: true
   -
     scope:
       path: "" # an empty string here means all files in the project
@@ -80,3 +83,5 @@ analytics:
     tracking_id          : UA-10920504-3
 
 repository: Scot3004/Scot3004.github.io
+
+words_per_minute: 200
