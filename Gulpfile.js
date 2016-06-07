@@ -10,7 +10,6 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
-    del = require('del'),
     newer = require('gulp-newer'),
     spawn = require('child_process').spawn;
 
@@ -68,10 +67,6 @@ gulp.task('img', function() {
 gulp.task('fonts', function() {
     return gulp.src(paths.fonts)
     .pipe(gulp.dest(paths.fontsOutput));
-});
-
-gulp.task('clean', function() {
-    del.sync([paths.scriptsOutput, paths.fontsOutput])
 });
 
 //Watch task

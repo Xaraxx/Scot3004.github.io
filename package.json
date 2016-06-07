@@ -36,7 +36,8 @@
     "test": "npm-run-all lint:css lint:js lint:html",
     "build": "jekyll build",
     "start": "jekyll serve -w",
-    "dev": "gulp"
+    "dev": "gulp",
+    "clean": "rm -rf fonts/ css/ js/ img/"
   },
   "repository": {
     "type": "git",
