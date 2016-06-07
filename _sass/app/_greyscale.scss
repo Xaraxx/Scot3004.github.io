@@ -48,8 +48,7 @@ a {
   -moz-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 
-  &:hover,
-  &:focus {
+  &:hover {
     text-decoration: none;
     color: $secundary-color;
   }

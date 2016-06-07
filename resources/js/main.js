@@ -1,4 +1,22 @@
+var smoothScroll = require('jquery-smooth-scroll');
+global.$ = require('jquery');
+global.jQuery = global.$;
+var bootstrapjs = require('bootstrap');
+require('magnific-popup');
+
+function checktop(){
+    if ($(".navbar-main").offset().top > 50) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
+}
+
+$(window).scroll(checktop);
+
 $(document).ready(function() {
+	checktop();
+	
 	$('.popup-gallery').magnificPopup({
 		delegate: 'a',
 		type: 'image',
@@ -16,4 +34,11 @@ $(document).ready(function() {
 			}
 		}
 	});
+});
+
+$('a.page-scroll').smoothScroll({
+  afterScroll: function(options) {
+    $(this).blur(); 
+  },
+  easing: 'swing'
 });

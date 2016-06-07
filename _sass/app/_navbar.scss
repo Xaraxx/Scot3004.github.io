@@ -44,7 +44,6 @@
         transition: background .3s ease-in-out;
 
         &:hover,
-        &:focus,
         &.active {
           outline: none;
           background-color: transparentize($grayscale-light, .7);
