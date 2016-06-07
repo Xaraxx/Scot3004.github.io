@@ -1,0 +1,42 @@
+{
+	"masterPicture": "resources/img/logo.png",
+	"iconsPath": "/icons",
+	"design": {
+		"ios": {
+			"pictureAspect": "backgroundAndMargin",
+			"backgroundColor": "#eeeeee",
+			"margin": "14%"
+		},
+		"desktopBrowser": {},
+		"windows": {
+			"pictureAspect": "noChange",
+			"backgroundColor": "#2b5797",
+			"onConflict": "override"
+		},
+		"androidChrome": {
+			"pictureAspect": "noChange",
+			"themeColor": "#00b1c6",
+			"manifest": {
+				"name": "Scot3004",
+				"display": "browser",
+				"orientation": "notSet",
+				"onConflict": "override",
+				"declared": true
+			}
+		},
+		"safariPinnedTab": {
+			"pictureAspect": "blackAndWhite",
+			"threshold": 50,
+			"themeColor": "#033e65"
+		}
+	},
+	"settings": {
+		"compression": 5,
+		"scalingAlgorithm": "Mitchell",
+		"errorOnImageTooSmall": false
+	},
+	"versioning": {
+		"paramName": "v",
+		"paramValue": "8jjdQnB5mR"
+	}
+}
