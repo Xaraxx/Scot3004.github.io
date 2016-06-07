@@ -1,0 +1,8 @@
+{
+  "modules": [
+    "bootstrap",
+    "devicons",
+    "font-awesome"
+  ],
+  "dest": "./"
+}

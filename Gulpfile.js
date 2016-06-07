@@ -28,17 +28,11 @@ var paths = {
         'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
     ],
     images: ['resources/img/**'],
-    fonts: [
-        'node_modules/bootstrap/fonts/*',
-        'node_modules/font-awesome/fonts/*',
-        'node_modules/devicons/fonts/*'
-    ],
-
+   
     /* Output paths */
     stylesOutput: 'css',
     scriptsOutput: 'js',
-    imagesOutput: 'img',
-    fontsOutput: 'fonts'
+    imagesOutput: 'img'
 };
 
 /* Tasks */
@@ -49,7 +43,6 @@ gulp.task('css', function() {
 });
 
 gulp.task('js', function() {
-
     return gulp.src(paths.vendor_scripts.concat(paths.scripts))
         .pipe(concat('main.js'))
         .pipe(rename({suffix: '.min'}))
@@ -62,11 +55,6 @@ gulp.task('img', function() {
         .pipe(newer(paths.imagesOutput))
         .pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))
         .pipe(gulp.dest(paths.imagesOutput));
-});
-
-gulp.task('fonts', function() {
-    return gulp.src(paths.fonts)
-    .pipe(gulp.dest(paths.fontsOutput));
 });
 
 //Watch task
