@@ -8,11 +8,8 @@ navbar_base: ""
 {% for pag in site.landing %}
   <section class="content-section text-center" id="{{ pag.pid }}">
     <h2>{{ pag.title }}</h2>
-  <div class="row">
-    
-    {{ pag.content }}
-  </div>
-</section>
+    <div class="row">
+      {{ pag.content }}
+    </div>
+  </section>
 {% endfor %}
-
-      
