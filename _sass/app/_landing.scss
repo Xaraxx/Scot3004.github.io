@@ -49,6 +49,10 @@
 }
 
 .content-section {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
   .row {
     margin-left: 0;
     margin-right: 0;
@@ -57,9 +61,7 @@
 
 @media(min-width:$screen-xs-max) {
   .content-section {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    padding-top: 100px;
     min-height: 100%;
   }
 }

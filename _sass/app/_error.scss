@@ -5,11 +5,15 @@
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  min-height: 100%;
 }
 
 .error-page-number {
   font-family: Sans-Serif;
-  font-size: 230px;
+  font-size: 114px;
   opacity: 1;
   -webkit-text-stroke: 5px $error-number-color-stroke;
   font-weight: 600;
@@ -19,3 +23,14 @@
     -5px 5px 0 $error-number-color-stroke,
     5px 5px 0 $error-number-color-stroke;
 }
+
+@media(min-width:$screen-xs-max) {
+  .error-page {
+    padding-top: 80px;
+  }
+
+  .error-page-number {
+    font-size: 230px;
+  }
+}
+
