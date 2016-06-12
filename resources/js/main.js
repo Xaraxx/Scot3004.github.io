@@ -5,11 +5,13 @@ var bootstrapjs = require('bootstrap');
 require('magnific-popup');
 
 function checktop(){
+  if($(".navbar-main").length){
     if ($(".navbar-main").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
+  }
 }
 
 $(window).scroll(checktop);
