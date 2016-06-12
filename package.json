@@ -1,6 +1,6 @@
 {
   "name": "scot3004",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Página web de presentación de Sergio C. Orozco Torres",
   "main": "Gulpfile.js",
   "dependencies": {
