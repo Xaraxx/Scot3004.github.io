@@ -3,22 +3,26 @@ title: Contribuciones
 pid: contribuciones
 nav_title: Contribuciones
 ---
-{% assign sorted_repos = (site.github.public_repositories) | reverse | where: "fork", "false" %}
+{% assign sorted_repos = (site.github.public_repositories) | reverse %}
 
-<div class="repo-list row">
+<div class="repo-list row flex-container">
     <!-- Check here for github metadata -->
     <!-- https://help.github.com/articles/repository-metadata-on-github-pages/ -->
     {% for repo in sorted_repos %}
-    <div class="col-md-4 card text-center">
-        <div class="thumbnail">
-            <div class="card-image geopattern" data-pattern-id="{{ repo.name }}">
-                <div class="card-image-cell">
+    <div class="col-md-4 text-center">
+        <div class="">
+            <div class="" data-pattern-id="{{ repo.name }}">
+                <div class="">
                     <h3 class="card-title">
                         <a href="{{ repo.html_url }}" target="_blank">{{ repo.name }}</a>
                     </h3>
                 </div>
             </div>
             <div class="caption">
+                <span data-toggle="tooltip" class="meta-info" title="Actualizado：{{ repo.updated_at }}">
+                    <span class="octicon octicon-clock"></span>
+                    <time datetime="{{ repo.updated_at }}" title="{{ repo.updated_at }}">{{ repo.updated_at | date: '%Y-%m-%d' }}</time>
+                </span>
                 <div class="card-description">
                     <p class="card-text">{{ repo.description }}</p>
                 </div>
@@ -31,10 +35,7 @@ nav_title: Contribuciones
                         <span class="octicon octicon-git-branch"></span> {{ repo.forks_count }}
                     </span>
                     {%  endcomment %}
-                    <span data-toggle="tooltip" class="meta-info" title="Actualizado：{{ repo.updated_at }}">
-                        <span class="octicon octicon-clock"></span>
-                        <time datetime="{{ repo.updated_at }}" title="{{ repo.updated_at }}">{{ repo.updated_at | date: '%Y-%m-%d' }}</time>
-                    </span>
+                    
                 </div>
             </div>
         </div>
