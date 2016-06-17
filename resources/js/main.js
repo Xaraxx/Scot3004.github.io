@@ -40,7 +40,7 @@ $(document).ready(function() {
 
 $('a.page-scroll').smoothScroll({
   beforeScroll: function(options){
-    $(".navbar-toggle").click();
+    $(".navbar-collapse").removeClass('in');
   },
   afterScroll: function(options) {
     $(this).blur();

@@ -49,6 +49,8 @@
 }
 
 .content-section {
+  padding-top: 80px;
+
   .row {
     margin-left: 0;
     margin-right: 0;
@@ -79,4 +81,10 @@
 .nav-logo {
   margin-bottom: 3px;
   margin-right: 7px;
+}
+
+@media(max-width:$screen-xs-max) {
+  .content-section:last-of-type {
+    margin-bottom: 150px;
+  }
 }
