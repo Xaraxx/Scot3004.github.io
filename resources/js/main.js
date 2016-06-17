@@ -39,8 +39,11 @@ $(document).ready(function() {
 });
 
 $('a.page-scroll').smoothScroll({
+  beforeScroll: function(options){
+    $(".navbar-toggle").click();
+  },
   afterScroll: function(options) {
-    $(this).blur(); 
+    $(this).blur();
   },
   easing: 'swing'
 });
