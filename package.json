@@ -31,17 +31,20 @@
     "lint:css": "scss-lint ./_sass",
     "lint:html": "htmlproofer ./_site --disable-external",
     "test": "npm-run-all lint:css lint:js lint:html",
-    "build": "jekyll build",
+    "build:jk": "JEKYLL_ENV=production jekyll build",
     "watch:jk": "jekyll serve -w",
-    "clean": "rm -rf fonts/ css/ js/ img/",
+    "clean": "rm -rf fonts/ css/ js/ img/ _site",
+    "mkdir": "mkdir fonts css js img",
     "build:js": "browserify resources/js/main.js | uglifyjs -c > js/main.min.js",
     "watch:js": "watchify resources/js/main.js -do js/main.min.js",
     "build:css": "sass _sass/main.scss:css/main.min.css --style compressed",
     "watch:css": "sass _sass/main.scss:css/main.min.css --watch",
+    "build": "npm-run-all mkdir build:js build:css build:jk",
     "start": "npm-run-all --parallel watch:js watch:css watch:jk",
     "imagemin": "imagemin-newer resources/img/** img",
     "img": "gulp img",
-    "fonts": "fontify"
+    "fonts": "fontify",
+    "build": "npm-run-all clean mkdir build:js build:css img fonts build:jk"
   },
   "repository": {
     "type": "git",
