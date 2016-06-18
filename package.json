@@ -1,6 +1,6 @@
 {
   "name": "scot3004",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "Página web de presentación de Sergio C. Orozco Torres",
   "main": "Gulpfile.js",
   "dependencies": {
@@ -39,12 +39,11 @@
     "watch:js": "watchify resources/js/main.js -do js/main.min.js",
     "build:css": "sass _sass/main.scss:css/main.min.css --style compressed",
     "watch:css": "sass _sass/main.scss:css/main.min.css --watch",
-    "build": "npm-run-all mkdir build:js build:css build:jk",
+    "build": "npm-run-all clean mkdir build:js build:css img fonts build:jk",
     "start": "npm-run-all --parallel watch:js watch:css watch:jk",
     "imagemin": "imagemin-newer resources/img/** img",
     "img": "gulp img",
-    "fonts": "fontify",
-    "build": "npm-run-all clean mkdir build:js build:css img fonts build:jk"
+    "fonts": "fontify"
   },
   "repository": {
     "type": "git",
