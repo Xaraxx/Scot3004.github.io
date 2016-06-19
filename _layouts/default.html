@@ -11,15 +11,17 @@ layout: compress
     {% include analytics.html %}
   </body>
 </html>
-<script>
-	var cb = function() {
-	var l = document.createElement('link'); l.rel = 'stylesheet';
-	l.href = '/css/main.min.css';
-	var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-	};
-	var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-	webkitRequestAnimationFrame || msRequestAnimationFrame;
-	if (raf) raf(cb);
-	else window.addEventListener('load', cb);
+<script type="text/javascript">
+  var stylesheet = document.createElement('link');
+  stylesheet.href = '/css/main.min.css';
+  stylesheet.rel = 'stylesheet';
+  stylesheet.type = 'text/css';
+  document.getElementsByTagName('head')[0].appendChild(stylesheet);
+  var stylesheet = document.createElement('link');
+  stylesheet.href = 'https://fonts.googleapis.com/css?family=Kalam';
+  stylesheet.rel = 'stylesheet';
+  stylesheet.type = 'text/css';
+  document.getElementsByTagName('head')[0].appendChild(stylesheet);
 </script>
-<link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet"> 
+<noscript><link rel="stylesheet" href="{{ "/css/main.min.css" | prepend: site.baseurl }}"></noscript>
+<noscript><link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet"></noscript>
