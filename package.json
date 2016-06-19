@@ -1,6 +1,6 @@
 {
   "name": "scot3004",
-  "version": "1.4.0-0",
+  "version": "1.5.0",
   "description": "Página web de presentación de Sergio C. Orozco Torres",
   "main": "Gulpfile.js",
   "dependencies": {
@@ -29,7 +29,7 @@
   "scripts": {
     "lint:js": "eslint . --ext .js",
     "lint:css": "scss-lint ./_sass",
-    "lint:html": "htmlproofer ./_site --disable-external",
+    "lint:html": "htmlproofer ./_site --disable-external --url-ignore '/#.*/'",
     "test": "npm-run-all lint:css lint:js lint:html",
     "build:jk": "JEKYLL_ENV=production jekyll build",
     "watch:jk": "jekyll serve -w",

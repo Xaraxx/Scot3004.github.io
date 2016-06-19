@@ -1,27 +1,10 @@
----
-layout: compress
----
 <!DOCTYPE html>
 <html lang="{{site.lang}}">
   {% include head.html %}
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     {% include scot3004/nav.html %}
     {{ content }}
-    <script async src="{{'/js/main.min.js'| prepend: site.baseurl }}"></script>
-    {% include analytics.html %}
+  <script async src="{{'/js/main.min.js'| prepend: site.baseurl }}"></script>
+  {% include analytics.html %}
   </body>
 </html>
-<script type="text/javascript">
-  var stylesheet = document.createElement('link');
-  stylesheet.href = '/css/main.min.css';
-  stylesheet.rel = 'stylesheet';
-  stylesheet.type = 'text/css';
-  document.getElementsByTagName('head')[0].appendChild(stylesheet);
-  var stylesheet = document.createElement('link');
-  stylesheet.href = 'https://fonts.googleapis.com/css?family=Kalam';
-  stylesheet.rel = 'stylesheet';
-  stylesheet.type = 'text/css';
-  document.getElementsByTagName('head')[0].appendChild(stylesheet);
-</script>
-<noscript><link rel="stylesheet" href="{{ "/css/main.min.css" | prepend: site.baseurl }}"></noscript>
-<noscript><link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet"></noscript>

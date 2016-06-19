@@ -20,8 +20,8 @@
   <meta property="dc.type" content="website" />
   <meta property="dc.description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta property="dc.coverage" content="Colombia" />
-  <style>html{background-color: #000; color: #fff;}a{color: #fff}a:hover{color: #fff}</style>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   {% include favicon.html %}
+  {% include css.html %}
 </head>
