@@ -252,7 +252,7 @@ linters:
     spaces: 0
 
   StringQuotes:
-    enabled: false
+    enabled: true
     style: single_quotes # or double_quotes
 
   TrailingSemicolon:
