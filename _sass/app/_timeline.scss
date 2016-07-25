@@ -8,7 +8,7 @@
     top: 0;
     bottom: 0;
     position: absolute;
-    content: "";
+    content: '';
     width: 2px;
     background-color: $grayscale-max-light;
     left: 40px;
@@ -22,7 +22,7 @@
 
     &::before,
     &::after {
-      content: " ";
+      content: ' ';
       display: table;
     }
 
