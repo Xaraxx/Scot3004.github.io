@@ -3,11 +3,9 @@ ecmaFeatures:
   jsx: false
 
 env:
-  amd: true
   browser: true
-  es6: false
   jquery: true
-  node: true
+extends: ["eslint:recommended"]
 
 # http://eslint.org/docs/rules/
 rules:

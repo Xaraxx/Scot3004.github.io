@@ -44,7 +44,7 @@
     "build:css": "sass _sass/main.scss:css/main.min.css --style compressed",
     "build:jk": "JEKYLL_ENV=production jekyll build",
     "build:js": "browserify resources/js/main.js | uglifyjs -c > js/main.min.js",
-    "build": "npm-run-all clean build:jk mkdir build:js build:css img fonts",
+    "build": "NODE_ENV=production npm-run-all clean build:jk mkdir build:js build:css img fonts",
     "watch:css": "sass _sass/main.scss:_site/css/main.min.css --watch",
     "watch:jk": "nodemon --ignore _site/ --ext html,md,yml --exec 'jekyll build'",
     "watch:js": "watchify resources/js/main.js -do _site/js/main.min.js",
