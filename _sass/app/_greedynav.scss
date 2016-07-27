@@ -1,0 +1,138 @@
+$greedy-bg-color: #000 !default;
+$greedy-text-color: #fff !default;
+$greedy-hover-text-color: $greedy-text-color !default;
+$greedy-btn-bg-color: #333 !default;
+$greedy-btn-fg-color: #eee !default;
+
+.nav-wrapper {
+  position: absolute;
+}
+
+.greedy-nav {
+  position: relative;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background: $greedy-bg-color;
+
+  a {
+    @include underline-from-center;
+    background: $greedy-bg-color;
+    margin: 0;
+    padding: 0 1rem;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 40px;
+
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    color: $greedy-text-color;
+
+    &:hover,
+    &.active {
+      color: $greedy-hover-text-color;
+      outline: none;
+      background-color: transparentize($grayscale-light, .7);
+    }
+  }
+}
+
+.greedy-nav-title {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  padding: 0 1rem;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.greedy-nav-btn {
+  align-self: stretch;
+  transition: all .4s ease-out;
+  outline: 0;
+  border: 0;
+  font-size: .9rem;
+  font-weight: bold;
+  background: $greedy-bg-color;
+
+  &.hidden {
+    transition: none;
+    border-right: .5rem solid $greedy-btn-bg-color;
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  &::after {
+    content: attr(count);
+    display: inline-flex;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    background: $greedy-btn-bg-color;
+    color: $greedy-btn-fg-color;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 14px;
+    margin-left: 1rem;
+  }
+}
+
+.greedy-nav-links {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  li {
+    flex: none;
+
+    &.active {
+      outline: none;
+      background-color: transparentize($grayscale-light, .7);
+    }
+  }
+}
+
+.greedy-nav-hidden-links {
+  position: absolute;
+  background: $greedy-bg-color;
+  right: 0;
+  top: 100%;
+  line-height: 2;
+  padding: .2rem 1rem;
+  list-style: none;
+
+  &.hidden {
+    display: none;
+  }
+
+  a {
+    width: 100%;
+  }
+}
+
+.greedy-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+body {
+  padding-top: 40px;
+}
