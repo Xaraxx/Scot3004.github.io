@@ -3,21 +3,9 @@ global.jQuery = global.$;
 var smoothScroll = require('jquery-smooth-scroll');
 var bootstrapjs = require('bootstrap');
 require('magnific-popup');
+require('./greedy-nav');
+
 $(document).ready(function() {
-  function checktop(){
-    var navbar_main = $(".navbar-main");
-    if(navbar_main.length){
-      if (navbar_main.offset().top > 50) {
-          $(".navbar-fixed-top").addClass("top-nav-collapse");
-      } else {
-          $(".navbar-fixed-top").removeClass("top-nav-collapse");
-      }
-    }
-  }
-
-  $(window).scroll(checktop);
-
-  checktop();
   
   $('.popup-gallery').magnificPopup({
     delegate: 'a',
@@ -46,79 +34,23 @@ $(document).ready(function() {
     },
     easing: 'swing'
   });
-});
 
-
-/*
-GreedyNav.js - http://lukejacksonn.com/actuate
-Licensed under the MIT license - http://opensource.org/licenses/MIT
-Copyright (c) 2015 Luke Jackson
-*/
-
-$(function() {
-
-  var $btn = $('.greedy-nav button');
-  var $vlinks = $('.greedy-nav-links');
-  var $hlinks = $('.greedy-nav-hidden-links');
-
-  var numOfItems = 0;
-  var totalSpace = 0;
-  var closingTime = 1000;
-  var breakWidths = [];
-
-  // Get initial state
-  $vlinks.children().outerWidth(function(i, w) {
-    totalSpace += w;
-    numOfItems += 1;
-    breakWidths.push(totalSpace);
+  $(document).on("scroll", function onScroll(event){
+    var padding = 90;
+    var scrollPos = $(document).scrollTop();
+    $('.nav-link').each(function (elem) {
+      var currLink = $(this);
+      console.log(currLink.attr("href"));
+      if(currLink.attr("href").charAt(0) === '#'){
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top - padding <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+          $('.nav-link').removeClass("active");
+          currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+      }
+    });
   });
-
-  var availableSpace, numOfVisibleItems, requiredSpace, timer;
-
-  function check() {
-
-    // Get instant state
-    availableSpace = $vlinks.width() - 10;
-    numOfVisibleItems = $vlinks.children().length;
-    requiredSpace = breakWidths[numOfVisibleItems - 1];
-
-    // There is not enought space
-    if (requiredSpace > availableSpace) {
-      $vlinks.children().last().prependTo($hlinks);
-      numOfVisibleItems -= 1;
-      check();
-      // There is more than enough space
-    } else if (availableSpace > breakWidths[numOfVisibleItems]) {
-      $hlinks.children().first().appendTo($vlinks);
-      numOfVisibleItems += 1;
-    }
-    // Update the button accordingly
-    $btn.attr("count", numOfItems - numOfVisibleItems);
-    if (numOfVisibleItems === numOfItems) {
-      $btn.addClass('hidden');
-    } else $btn.removeClass('hidden');
-  }
-
-  // Window listeners
-  $(window).resize(function() {
-    check();
-  });
-
-  $btn.on('click', function() {
-    $hlinks.toggleClass('hidden');
-    clearTimeout(timer);
-  });
-
-  $hlinks.on('mouseleave', function() {
-    // Mouse has left, start the timer
-    timer = setTimeout(function() {
-      $hlinks.addClass('hidden');
-    }, closingTime);
-  }).on('mouseenter', function() {
-    // Mouse is back, cancel the timer
-    clearTimeout(timer);
-  });
-
-  check();
-
 });
