@@ -43,8 +43,11 @@ exclude:
   - "package.json"
   - "fontify.json"
   - "faviconDescription.json"
+  - "npm-debug.log"
+  - "CNAME"
+  - "app.js"
 
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-github-metadata
 
@@ -87,6 +90,5 @@ repository: Scot3004/Scot3004.github.io
 words_per_minute: 200
 
 compress_html:
-  clippings: all
   ignore:
     envs: development

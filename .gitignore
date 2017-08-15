@@ -68,3 +68,7 @@ _site
 
 ## Gemfile
 Gemfile.lock
+
+npm-debug.log
+
+.DS_Store

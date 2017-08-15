@@ -6,6 +6,7 @@ node_js:
 
 before_install:
 - export TZ=America/Bogota
+- nvm install node
 - node --version
 - nvm --version
 

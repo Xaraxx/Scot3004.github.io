@@ -1,2 +1,9 @@
 // Hover overrides
-@import '../../node_modules/hover.css/scss/hover';
+@import '../../node_modules/hover.css/scss/hacks';
+@import '../../node_modules/hover.css/scss/options';
+@import '../../node_modules/hover.css/scss/mixins';
+@import '../../node_modules/hover.css/scss/effects/border-transitions/underline-from-center';
+
+.nav-link {
+  @include underline-from-center;
+}
