@@ -47,7 +47,7 @@ exclude:
   - "CNAME"
   - "app.js"
 
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-github-metadata
 
