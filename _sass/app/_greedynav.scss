@@ -9,48 +9,46 @@ $greedy-btn-fg-color: #eee !default;
 }
 
 .greedy-nav {
-  position: relative;
-  height: 40px;
-  display: flex;
   align-items: center;
   background: $greedy-bg-color;
+  display: flex;
+  height: 40px;
+  font-size: 16px;
+  position: relative;
 
   a {
     @include underline-from-center;
+    align-items: center;
     background: $greedy-bg-color;
+    border: 0;
+    color: $greedy-text-color;
+    display: flex;
+    height: 100%;
     margin: 0;
     padding: 0 1rem;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
     vertical-align: middle;
-    height: 100%;
-    line-height: 40px;
-
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-    color: $greedy-text-color;
 
     &:hover,
+    &:focus,
+    &:active,
     &.active {
+      background-color: transparentize($grayscale-light, .8);
       color: $greedy-hover-text-color;
       outline: none;
-      background-color: transparentize($grayscale-light, .7);
+      text-decoration: none;
     }
   }
 }
 
 .greedy-nav-title {
-  display: flex;
   align-self: stretch;
   align-items: center;
-  padding: 0 1rem;
-  font-weight: bold;
-  font-size: 20px;
-  margin: 0;
   border: 0;
-  font: inherit;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 1rem;
   vertical-align: baseline;
 }
 
@@ -74,6 +72,7 @@ $greedy-btn-fg-color: #eee !default;
   &::after {
     content: attr(count);
     display: inline-flex;
+    font-size: 12px;
     width: 25px;
     height: 25px;
     align-items: center;
@@ -81,8 +80,6 @@ $greedy-btn-fg-color: #eee !default;
     background: $greedy-btn-bg-color;
     color: $greedy-btn-fg-color;
     border-radius: 50%;
-    font-size: 14px;
-    line-height: 14px;
     margin-left: 1rem;
   }
 }
@@ -102,7 +99,7 @@ $greedy-btn-fg-color: #eee !default;
 
     &.active {
       outline: none;
-      background-color: transparentize($grayscale-light, .7);
+      background-color: transparentize($grayscale-light, .8);
     }
   }
 }

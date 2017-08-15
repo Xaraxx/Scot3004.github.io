@@ -1,4 +1,4 @@
-<nav class='greedy-nav greedy-top'>
+<nav class='greedy-nav greedy-top main-nav'>
   <h1 class='greedy-nav-title'>
     <a class="" href="{{page.navbar_base}}">
       <img src="/icons/favicon-16x16.png" class="nav-logo" alt="scot3004"><span>Sergio Orozco</span>
@@ -15,7 +15,7 @@
     </li>
     {% endfor %}
     <li>
-      <a class="nav-link" href="/blog">
+      <a class="nav-link" href="/blog/">
         Blog
         <span class="badge pull-right">
           {{site.posts.size}}
@@ -23,7 +23,7 @@
       </a>
     </li>
     <li>
-      <a class="hvr-underline-from-center" href="{{ site.baseurl }}/tags">
+      <a class="nav-link" href="{{ site.baseurl }}/tags">
         Etiquetas
         <span class="badge pull-right">{{site.tags.size}}</span>
       </a>
