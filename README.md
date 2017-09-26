@@ -64,4 +64,4 @@ Este blog ha sido posible gracias a una serie de herramientas y utilitarios que 
 * [Start Bootstrap](http://startbootstrap.com/)
 
 ## Copyright and Licenses
-Copyright 2016 Scot3004. Code released under the [AGPL v3](LICENSE)
+Copyright 2017 Scot3004. Code released under the [AGPL v3](LICENSE)
