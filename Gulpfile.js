@@ -13,7 +13,6 @@ var gulp = require('gulp'),
 var paths = {
     /* Source paths */
     images: ['resources/img/**'],
-   
     /* Output paths */
     imagesOutput: 'img'
 };
@@ -22,6 +21,16 @@ var paths = {
 gulp.task('img', function() {
     return gulp.src(paths.images)
         .pipe(newer(paths.imagesOutput))
-        .pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+            imagemin.svgo({
+                plugins: [
+                    {removeViewBox: true}
+                ]
+            })
+        ]
+        ))
         .pipe(gulp.dest(paths.imagesOutput));
 });
