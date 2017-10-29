@@ -84,6 +84,7 @@ defaults:
     values:
       navbar_classes: "navbar navbar-custom navbar-fixed-top top-nav-collapse"
       navbar_base: "/"
+      image: '/img/logo.png'
 
 tag_title_prefix: ''
 tag_title_suffix: ' - posts etiquetados'
