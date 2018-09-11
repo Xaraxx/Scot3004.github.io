@@ -1,9 +1,7 @@
 ---
 title: Windows o Linux
-date: '2010-10-19T15:10:00.001-05:00'
 author: Sergio C. Orozco Torres
 tags:
-modified_time: '2011-06-05T17:10:43.342-05:00'
 blogger_id: tag:blogger.com,1999:blog-3290987933179858425.post-8542088883887158315
 blogger_orig_url: http://scot3004.blogspot.com/2010/10/windows-o-linux.html
 category: linux

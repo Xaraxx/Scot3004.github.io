@@ -1,9 +1,7 @@
 ---
 title: SQLite NetBeans
-date: '2011-06-02T11:17:00.003-05:00'
 author: Sergio C. Orozco Torres
 tags:
-modified_time: '2011-06-05T17:02:31.997-05:00'
 thumbnail: http://1.bp.blogspot.com/-Uh4mEjsnmZc/TecrJnVbChI/AAAAAAAAAKQ/jh5bqLy2zkM/s72-c/instant%25C3%25A1nea1.png
 blogger_id: tag:blogger.com,1999:blog-3290987933179858425.post-5648991122599032996
 blogger_orig_url: http://scot3004.blogspot.com/2011/06/sqlite-netbeans.html

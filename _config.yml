@@ -60,7 +60,8 @@ exclude:
   - "app.js"
   - "yarn.lock"
   - "README.md"
-gems:
+  - vendor
+plugins:
   - 'jekyll-paginate'
   - 'jekyll-github-metadata'
   - 'jekyll-seo-tag'

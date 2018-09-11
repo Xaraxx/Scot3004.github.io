@@ -1,6 +1,5 @@
 ---
 title:  "Desarrollo web"
-date:   2016-03-21 9:09:10 -0500
 category: dev
 author: Sergio C. Orozco Torres
 ---
