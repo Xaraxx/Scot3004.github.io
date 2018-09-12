@@ -1,6 +1,8 @@
 ---
 title: Por que uso npm
 excerpt: NPM puede llegara ser un gran aliado al desarrollar en front end, a continuación mis motivos
+toc: true
+toc_sticky: true
 ---
 
 Este es un análisis del por que mi blog usa NPM

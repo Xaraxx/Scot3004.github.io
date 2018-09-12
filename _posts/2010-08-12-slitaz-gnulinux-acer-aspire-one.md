@@ -1,5 +1,4 @@
 ---
-author: Sergio C. Orozco Torres
 tags:
 blogger_id: tag:blogger.com,1999:blog-3290987933179858425.post-4881658907635129104
 blogger_orig_url: http://scot3004.blogspot.com/2010/08/slitaz-gnulinux-acer-aspire-one.html

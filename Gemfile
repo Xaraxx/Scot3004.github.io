@@ -8,3 +8,4 @@ gem 'scss_lint', require: false
 gem "html-proofer", require: false
 gem "jekyll-seo"
 gem "jekyll-seo-tag"
+gem "minimal-mistakes-jekyll"

@@ -1,0 +1,9 @@
+main:
+  - title: "Quien soy"
+    url: /
+  - title: "Blog"
+    url: /blog/
+  - title: "Portafolio"
+    url: /portafolio/
+  - title: "Contacto"
+    url: /contacto/

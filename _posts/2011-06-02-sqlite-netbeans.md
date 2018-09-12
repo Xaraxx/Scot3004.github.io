@@ -1,6 +1,5 @@
 ---
 title: SQLite NetBeans
-author: Sergio C. Orozco Torres
 tags:
 thumbnail: http://1.bp.blogspot.com/-Uh4mEjsnmZc/TecrJnVbChI/AAAAAAAAAKQ/jh5bqLy2zkM/s72-c/instant%25C3%25A1nea1.png
 blogger_id: tag:blogger.com,1999:blog-3290987933179858425.post-5648991122599032996

@@ -1,7 +1,6 @@
 ---
 title: Modularizando JavaScript
 category: dev
-author: Sergio C. Orozco Torres
 excerpt: Divide y venceras, una gran verdad del desarrollo web
 ---
 

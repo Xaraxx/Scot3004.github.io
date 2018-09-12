@@ -16,7 +16,37 @@ nombre: Sergio C. Orozco Torres
 lema: Solo quien se esfuerza logra sus objetivos
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.secorto.com" # the base hostname & protocol for your site
-author: scot3004
+
+author:
+  name             : "Sergio C. Orozco Torres"
+  avatar           : "/img/logo.png"
+  bio              : "Especialista en seguridad informática, Automatizador PSL"
+  location         : "Medellín, CO"
+  email            :
+  uri              :
+  home             : # null (default), "absolute or relative url to link to author home"
+  bitbucket        :
+  codepen          : scot3004
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+  github           : scot3004
+  google_plus      :
+  keybase          :
+  instagram        :
+  lastfm           :
+  linkedin         : scot3004
+  pinterest        :
+  soundcloud       :
+  stackoverflow    :
+  steam            : scot3004
+  tumblr           :
+  twitter          : scot3004
+  vine             :
+  weibo            :
+  xing             :
+  youtube          :
 twitter:
   username: scot3004
 facebook:
@@ -62,12 +92,8 @@ exclude:
   - "README.md"
   - vendor
 plugins:
-  - 'jekyll-paginate'
   - 'jekyll-github-metadata'
   - 'jekyll-seo-tag'
-
-paginate: 5
-paginate_path: "/blog/:num/"
 
 defaults:
   -
@@ -75,17 +101,16 @@ defaults:
       path: "" # an empty string here means all files in the project
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
-      layout: "post"
+      layout: "single"
       comments: true
       author_profile: true
       read_time: true
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
+  - scope:
+      path: ""
+      type: pages
     values:
-      navbar_classes: "navbar navbar-custom navbar-fixed-top top-nav-collapse"
-      navbar_base: "/"
-      image: '/img/logo.png'
+      layout: single
+      author_profile: true
 
 tag_title_prefix: ''
 tag_title_suffix: ' - posts etiquetados'
@@ -111,3 +136,17 @@ words_per_minute: 200
 compress_html:
   ignore:
     envs: development
+
+locale: "es-ES"
+
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "dark"
+
+include: ['_pages']
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/

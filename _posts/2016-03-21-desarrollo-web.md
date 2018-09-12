@@ -1,7 +1,6 @@
 ---
 title:  "Desarrollo web"
 category: dev
-author: Sergio C. Orozco Torres
 ---
 
 El desarrollo web presenta desafios para aquellos que escogen tan linda y demandada profesión

@@ -1,6 +1,5 @@
 ---
 title: Windows o Linux
-author: Sergio C. Orozco Torres
 tags:
 blogger_id: tag:blogger.com,1999:blog-3290987933179858425.post-8542088883887158315
 blogger_orig_url: http://scot3004.blogspot.com/2010/10/windows-o-linux.html
