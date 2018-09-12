@@ -15,7 +15,7 @@ subject: Presentación de Sergio Orozco Torres como desarrolador web
 nombre: Sergio C. Orozco Torres
 lema: Solo quien se esfuerza logra sus objetivos
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.secorto.com" # the base hostname & protocol for your site
+url: "https://scot3004.secorto.com" # the base hostname & protocol for your site
 
 author:
   name             : "Sergio C. Orozco Torres"
@@ -111,6 +111,13 @@ defaults:
     values:
       layout: single
       author_profile: true
+  - scope:
+      path: ""
+      type: portafolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
 tag_title_prefix: ''
 tag_title_suffix: ' - posts etiquetados'
@@ -118,8 +125,8 @@ tag_title_suffix: ' - posts etiquetados'
 timezone: '-0500'
 
 collections:
-  - services
-  - landing
+  portafolio:
+    output: true
 
 timeline-img: "/img/timeline/default.png"
 
