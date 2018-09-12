@@ -20,7 +20,7 @@
   },
   "scripts": {
     "lint:css": "scss-lint ./_sass",
-    "lint:html": "htmlproofer ./_site --disable-external --url-ignore '/#.*/'",
+    "lint:html": "htmlproofer ./_site --disable-external --url-ignore '/#.*/' --empty-alt-ignore",
     "lint:js": "eslint . --ext .js",
     "lint": "npm-run-all lint:js lint:css lint:html",
     "test": "npm run lint",
