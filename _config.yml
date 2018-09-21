@@ -15,7 +15,7 @@ subject: Presentación de Sergio Orozco Torres como desarrolador web
 nombre: Sergio C. Orozco Torres
 lema: Solo quien se esfuerza logra sus objetivos
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://scot3004.secorto.com" # the base hostname & protocol for your site
+url: "https://www.secorto.com" # the base hostname & protocol for your site
 
 author:
   name             : "Sergio C. Orozco Torres"
@@ -51,7 +51,7 @@ twitter:
   username: scot3004
 facebook:
   app_id: '291685517914169'
-  publisher: 'scot3004.secorto'
+  publisher: 'scot3004'
   admins: 'scot3004'
 logo: '/img/logo.png'
 social:
