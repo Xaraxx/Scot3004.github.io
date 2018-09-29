@@ -1,6 +1,6 @@
 ---
 title: "Python Barranquilla website"
-excerpt: "Ginger Gulp design system including logo mark, website design, and branding applications."
+excerpt: "Comunidad de desarrolladores python en la ciudad de Barranquilla."
 header:
   image: /img/pybaq/members.jpg
   teaser: /img/pybaq/members.jpg
